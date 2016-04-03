@@ -33,16 +33,16 @@ import java.util.List;
 
 import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
-public class GestureSettings extends SettingsPreferenceFragment
+public class NavigationSettings extends SettingsPreferenceFragment
         implements Indexable {
 
-    private static final String TAG = GestureSettings.class.getSimpleName();
+    private static final String TAG = NavigationSettings.class.getSimpleName();
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.gesture_settings);
+        addPreferencesFromResource(R.xml.navigation_settings);
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
     }
@@ -62,7 +62,7 @@ public class GestureSettings extends SettingsPreferenceFragment
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.gesture_settings;
+                    sir.xmlResId = R.xml.navigation_settings;
                     result.add(sir);
 
                     return result;

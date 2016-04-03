@@ -62,7 +62,7 @@ public class VisualSettings extends SettingsPreferenceFragment
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.extra_settings;
+                    sir.xmlResId = R.xml.visual_settings;
                     result.add(sir);
 
                     return result;
