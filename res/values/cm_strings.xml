@@ -79,13 +79,14 @@
     <string name="mem_info">Memory</string>
 
     <!-- About phone screen, Cypher device maintainer name -->
-    <string name="device_maintainer">Device maintainer</string>
+    <string name="cypher_api">API</string>
     <string name="device_maintainers">Device maintainers</string>
 
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
     <string name="themes_settings_title">Themes</string>
-
+    <string name="themes_settings_title_summary">Change your devices look down to the core</string>
+	
     <!-- Sound settings screen -->
     <string name="ring_mode_title">Ring mode</string>
     <string name="ring_mode_normal">Normal</string>
@@ -297,6 +298,7 @@
 
     <!-- Battery light settings -->
     <string name="battery_light_title">Battery light</string>
+	<string name="battery_light_title_summary">Choose whether the LED will pulse when the battery is low</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_list_title">Colors</string>
     <string name="battery_light_low_color_title">Battery low</string>
@@ -306,6 +308,7 @@
 
     <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Notification light</string>
+	<string name="notification_light_title_summary">Change the way notifcations are presented and choose which apps will have access</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Apps</string>
     <string name="notification_light_phonelist_title">Phone</string>
@@ -603,7 +606,7 @@
 
     <!-- tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
+    <string name="double_tap_to_sleep_summary">Double-tap on the statusbar to turn off the display</string>
 
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
@@ -794,7 +797,8 @@
     <string name="power_notifications_ringtone_silent">Silent</string>
 
     <!-- Status bar -->
-    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_title">Statusbar</string>
+	<string name="status_bar_title_summary">Increase the usability and modify your statusbars interface</string>
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
     <string name="status_bar_notif_count_title">Show notification count</string>
@@ -1049,7 +1053,7 @@
     <string name="sim_card_status_title">SIM %d status</string>
     <string name="sim_card_lock_settings_title">SIM %d lock settings</string>
     <string name="sim_card_summary_empty">SIM not inserted</string>
-    <string name="sim_mobile_network_settings_category_title">Cellular network settings</string>
+    <string name="sim_mobile_network_settings_category_title">Mobile networks</string>
     <string name="sim_mobile_network_settings_title">SIM %d settings</string>
 
     <!-- Zen mode allowed event setting summary items -->

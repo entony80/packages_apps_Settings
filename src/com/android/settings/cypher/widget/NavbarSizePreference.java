@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cypher.fragments;
+package com.android.settings.cypher.widget;
 
 import com.android.internal.utils.du.DUActionUtils;
 

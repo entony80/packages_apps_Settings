@@ -16,5 +16,5 @@
 -->
 
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/ic_settings_applications_alpha"
+    android:src="@drawable/ic_settings_visual_alpha"
     android:tint="?android:attr/colorAccent" />

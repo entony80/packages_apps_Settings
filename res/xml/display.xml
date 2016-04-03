@@ -64,13 +64,6 @@
                 android:summary="@string/tap_to_wake_summary"
                 android:persistent="false" />
 
-        <!-- Double tap to sleep -->
-        <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
-                android:key="double_tap_sleep_gesture"
-                android:title="@string/double_tap_to_sleep_title"
-                android:summary="@string/double_tap_to_sleep_summary"
-                android:defaultValue="true" />
-
         <SwitchPreference
                 android:key="camera_gesture"
                 android:title="@string/camera_gesture_title"
@@ -110,42 +103,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:key="dashboard_category"
-            android:title="@string/dashboard_category">
-
-        <ListPreference
-                android:key="dashboard_columns"
-                android:title="@string/dashboard_columns_title"
-                android:dialogTitle="@string/dashboard_columns_dialog_title"
-                android:entries="@array/dashboard_columns_entries"
-                android:entryValues="@array/dashboard_columns_values"
-                android:summary="@string/dashboard_columns_summary"
-                android:persistent="false" />
-
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                android:key="dashboard_tileview_double_lines"
-                android:title="@string/dashboard_tileview_double_lines_title"
-                android:summary="@string/dashboard_tileview_double_lines_summary"
-                android:defaultValue="false" />
-
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-                android:key="dashboard_tileview_dividers"
-                android:title="@string/dashboard_tileview_dividers_title"
-                android:summary="@string/dashboard_tileview_dividers_summary"
-                android:defaultValue="false" />
-
-        <ListPreference
-                android:key="dashboard_switches"
-                android:title="@string/dashboard_switches_title"
-                android:dialogTitle="@string/dashboard_switches_dialog_title"
-                android:entries="@array/dashboard_switches_entries"
-                android:entryValues="@array/dashboard_switches_values"
-                android:summary="@string/dashboard_switches_summary"
-                android:persistent="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
       android:key="category_doze_options"
       android:title="@string/display_category_doze_options_title" >
 
@@ -161,6 +118,12 @@
                 android:key="advanced_doze_options"
                 android:title="@string/doze_settings_title"
                 android:dependency="doze" />
+				
+		<PreferenceScreen
+		        android:fragment="com.android.settings.cypher.GestureSettings"
+				android:key="gesture_settings_key"
+				android:title="@string/gesture_settings_cypher_title"
+				android:summary="@string/gesture_settings_cypher_title_summary" />
 
     </PreferenceCategory>
 
@@ -194,24 +157,6 @@
                 settings:keywords="@string/keywords_display_font_size"
                 android:summary="@string/summary_font_size"
                 android:dialogTitle="@string/dialog_title_font_size" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-            android:key="lights"
-            android:title="@string/category_lights">
-
-        <!-- Battery light -->
-        <PreferenceScreen
-                android:key="battery_light"
-                android:title="@string/battery_light_title"
-                android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
-
-        <!-- Notification lights -->
-        <PreferenceScreen
-                android:key="notification_light"
-                android:title="@string/notification_light_title"
-                android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
 
     </PreferenceCategory>
 

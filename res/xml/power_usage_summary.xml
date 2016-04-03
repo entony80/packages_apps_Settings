@@ -30,6 +30,12 @@
             android:title="@string/autoperf_title"
             android:summary="@string/autoperf_summary"
             android:defaultValue="true" />
+			
+		<PreferenceScreen
+                android:key="battery_light"
+                android:title="@string/battery_light_title"
+				android:summary="@string/battery_light_title_summary"
+                android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
 
         <!-- Bar color -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference

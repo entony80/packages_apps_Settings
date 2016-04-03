@@ -80,7 +80,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     /** If there is no setting in the provider, use this. */
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
 
-    private static final String KEY_CATEGORY_LIGHTS = "lights";
     private static final String KEY_CATEGORY_DISPLAY = "display";
     private static final String KEY_CATEGORY_INTERFACE = "interface";
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
@@ -120,8 +119,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mProximityCheckOnWakePreference;
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mWakeWhenPluggedOrUnplugged;
-    private ListPreference mDashboardColumns;
-    private ListPreference mDashboardSwitches;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -185,18 +182,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mFontSizePref = (FontDialogPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
         mFontSizePref.setOnPreferenceClickListener(this);
-
-        mDashboardColumns = (ListPreference) findPreference(DASHBOARD_COLUMNS);
-        mDashboardColumns.setValue(String.valueOf(Settings.System.getInt(
-                getContentResolver(), Settings.System.DASHBOARD_COLUMNS, DashboardContainerView.mDashboardValue)));
-        mDashboardColumns.setSummary(mDashboardColumns.getEntry());
-        mDashboardColumns.setOnPreferenceChangeListener(this);
-
-        mDashboardSwitches = (ListPreference) findPreference(DASHBOARD_SWITCHES);
-        mDashboardSwitches.setValue(String.valueOf(Settings.System.getInt(
-                getContentResolver(), Settings.System.DASHBOARD_SWITCHES, 0)));
-        mDashboardSwitches.setSummary(mDashboardSwitches.getEntry());
-        mDashboardSwitches.setOnPreferenceChangeListener(this);
 
         mAutoBrightnessPreference = (SwitchPreference) findPreference(KEY_AUTO_BRIGHTNESS);
         if (mAutoBrightnessPreference != null && isAutomaticBrightnessAvailable(getResources())) {
@@ -270,9 +255,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     (proximityCheckOnWakeDefault ? 1 : 0)) == 1);
         }
 
-        mWakeWhenPluggedOrUnplugged =
-                (SwitchPreference) findPreference(KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
-        initPulse((PreferenceCategory) findPreference(KEY_CATEGORY_LIGHTS));
     }
 
     private static boolean allowAllRotations(Context context) {
@@ -516,23 +498,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     DreamSettings.getSummaryTextWithDreamName(getActivity()));
         }
     }
-
-    // === Pulse notification light ===
-
-    private void initPulse(PreferenceCategory parent) {
-        if (!getResources().getBoolean(
-                com.android.internal.R.bool.config_intrusiveNotificationLed)) {
-            parent.removePreference(parent.findPreference(KEY_NOTIFICATION_LIGHT));
-        }
-        if (!getResources().getBoolean(
-                com.android.internal.R.bool.config_intrusiveBatteryLed)
-                || UserHandle.myUserId() != UserHandle.USER_OWNER) {
-            parent.removePreference(parent.findPreference(KEY_BATTERY_LIGHT));
-        }
-        if (parent.getPreferenceCount() == 0) {
-            getPreferenceScreen().removePreference(parent);
-        }
-    }
     /**
      * Reads the current font size and sets the value in the summary text
      */
@@ -619,20 +584,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist night mode setting", e);
             }
-        }
-        if (preference == mDashboardSwitches) {
-            Settings.System.putInt(getContentResolver(), Settings.System.DASHBOARD_SWITCHES,
-                    Integer.valueOf((String) objValue));
-            mDashboardSwitches.setValue(String.valueOf(objValue));
-            mDashboardSwitches.setSummary(mDashboardSwitches.getEntry());
-            return true;
-        }
-        if (preference == mDashboardColumns) {
-            Settings.System.putInt(getContentResolver(), Settings.System.DASHBOARD_COLUMNS,
-                    Integer.valueOf((String) objValue));
-            mDashboardColumns.setValue(String.valueOf(objValue));
-            mDashboardColumns.setSummary(mDashboardColumns.getEntry());
-            return true;
         }
         return true;
     }

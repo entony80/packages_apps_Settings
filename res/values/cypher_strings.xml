@@ -27,6 +27,14 @@
     <string name="allow_lights_title">Lights in do not disturb mode</string>
 	
 	<string name="visual_settings_title">Visual</string>
+	<string name="cypher_system_updates">System update</string>
+	<string name="navigation_settings_title">Navigation</string>
+	<string name="navigation_settings_title_summary">An extensive list of options to modify your navigation bar</string>
+	<string name="gesture_settings_cypher_title">Gestures</string>
+	<string name="gesture_settings_cypher_title_summary">Give your device life with a new and easy way to interact with activities</string>
+	<string name="three_finger_gesture">Three-finger screeny</string>
+	<string name="three_finger_gesture_summary">Swipe three fingers across the screen to take a screenshot</string>
+	
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -545,7 +553,8 @@
     <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
 
     <!-- Navbar height -->
-    <string name="navigation_bar_size_title">Bar size</string>
+    <string name="navigation_bar_size_title">Dimensions</string>
+	<string name="navigation_bar_size_title_summary">Change the height and width of the navigation bar</string>
     <string name="portrait_title">Portrait height</string>
     <string name="land_vert_title">Landscape width</string>
     <string name="land_hor_title">Landscape height</string>

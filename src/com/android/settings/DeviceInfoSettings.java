@@ -95,7 +95,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FRONT_CAMERA = "device_front_camera";
     private static final String KEY_DEVICE_SCREEN_RESOLUTION = "device_screen_resolution";
     private static final String KEY_MOD_VERSION = "mod_version";
-    private static final String KEY_DEVICE_MAINTAINER = "device_maintainer";
+    private static final String KEY_CYPHER_API = "cypher_api";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
@@ -147,7 +147,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         findPreference(KEY_MOD_BUILD_DATE).setEnabled(true);
-        setMaintainerSummary(KEY_DEVICE_MAINTAINER, "ro.aicp.maintainer");
+        setMaintainerSummary(KEY_CYPHER_API, "ro.cypher.api");
 
         addStringPreference(KEY_DEVICE_CHIPSET,
                 SystemProperties.get("ro.device.chipset", null));
@@ -424,7 +424,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             findPreference(preference).setSummary(maintainers);
             if (maintainers.contains(",")) {
                 findPreference(preference).setTitle(
-                        getResources().getString(R.string.device_maintainers));
+                        getResources().getString(R.string.cypher_api));
             }
         } catch (RuntimeException e) {
             // No recovery

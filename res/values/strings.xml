@@ -2758,7 +2758,7 @@
     <string name="tethering_help_button_text">Help</string>
 
     <!-- Wireless controls, item title to go into the network settings -->
-    <string name="network_settings_title">Cellular networks</string>
+    <string name="network_settings_title">Mobile networks</string>
 
     <!-- Mobile plan [CHAR LIMIT=35]-->
     <string name="manage_mobile_plan_title" translatable="true">Cellular plan</string>
@@ -6078,7 +6078,7 @@
     <string name="app_notifications_title">App notifications</string>
 
     <!-- Sound & notification > Sound section: Title for the other sounds option and associated settings page. [CHAR LIMIT=30] -->
-    <string name="other_sound_settings">Other sounds</string>
+    <string name="other_sound_settings">Advanced</string>
 
     <!-- Sound & notification > Other sounds: Title for the option enabling touch sounds for dial pad tones. [CHAR LIMIT=30] -->
     <string name="dial_pad_tones_title">Dial pad tones</string>
