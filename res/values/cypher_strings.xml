@@ -260,6 +260,19 @@
     <string name="shortcut_action_power">Screen Off</string>
     <string name="shortcut_action_search">Search in app</string>
 	
+	<!-- App Circle sidebar -->
+    <string name="category_app_circle_bar_title">Wheel</string>
+    <string name="app_circle_bar_title">Wheel</string>
+    <string name="app_circle_bar_summary">Navigate to your apps faster by swiping from the right side of the screen</string>
+    <string name="app_circle_bar_included_apps_title">Included apps</string>
+    <string name="app_circle_bar_included_apps_summary">Apps will show in app circle bar</string>
+    <string name="trigger_width_title">Width</string>
+    <string name="trigger_width_summary">Adjust the width of the trigger area</string>
+    <string name="trigger_top_title">Position</string>
+    <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
+    <string name="trigger_bottom_title">Height</string>
+    <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
+	
 	<!-- Battery Bar -->
     <string name="battery_icon">Icon</string>
     <string name="battery_not_title">Battery icon in notifications</string>
