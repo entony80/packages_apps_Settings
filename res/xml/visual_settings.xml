@@ -31,6 +31,13 @@
             </intent>
         </PreferenceScreen>
 		
+		<!-- App Circle Bar -->
+		<PreferenceScreen
+		        android:title="@string/app_circle_bar_title"
+				android:key="wheel_key"
+				android:summary="@string/app_circle_bar_summary"
+				android:fragment="com.android.settings.cypher.fragments.AppCircleBar" />
+		
 		<!-- Status bar -->
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"
@@ -46,5 +53,12 @@
 				android:summary="@string/navigation_settings_title_summary"
 				android:fragment="com.android.settings.cypher.NavigationSettings"
 				/>
+				
+		<!-- PiControls -->
+		<PreferenceScreen
+		        android:title="@string/pa_pie_control_title"
+				android:key="pi_control_key"
+				android:summary="@string/pa_pie_control_title_summary"
+				android:fragment="com.android.settings.cypher.fragments.PieControls" />
 		
 </PreferenceScreen>
