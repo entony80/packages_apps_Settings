@@ -36,6 +36,12 @@
                 android:title="@string/battery_light_title"
 				android:summary="@string/battery_light_title_summary"
                 android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
+				
+		<PreferenceScreen
+		        android:key="live_battery"
+				android:title="@string/battery_bar"
+				android:summary="@string/battery_bar_summary"
+				android:fragment="com.android.settings.cypher.fragments.BatteryBar" />
 
         <!-- Bar color -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
