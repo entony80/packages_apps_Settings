@@ -87,13 +87,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
-    private static final String KEY_DEVICE_CHIPSET = "device_chipset";
-    private static final String KEY_DEVICE_CPU = "device_cpu";
-    private static final String KEY_DEVICE_GPU = "device_gpu";
-    private static final String KEY_DEVICE_MEMORY = "device_memory";
-    private static final String KEY_DEVICE_REAR_CAMERA = "device_rear_camera";
-    private static final String KEY_DEVICE_FRONT_CAMERA = "device_front_camera";
-    private static final String KEY_DEVICE_SCREEN_RESOLUTION = "device_screen_resolution";
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_CYPHER_API = "cypher_api";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
@@ -148,20 +141,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         findPreference(KEY_MOD_BUILD_DATE).setEnabled(true);
         setMaintainerSummary(KEY_CYPHER_API, "ro.cypher.api");
-
-        addStringPreference(KEY_DEVICE_CHIPSET,
-                SystemProperties.get("ro.device.chipset", null));
-        addStringPreference(KEY_DEVICE_CPU,
-                SystemProperties.get("ro.device.cpu", getCPUInfo()));
-        addStringPreference(KEY_DEVICE_GPU,
-                SystemProperties.get("ro.device.gpu", null));
-        addStringPreference(KEY_DEVICE_MEMORY, getMemInfo());
-        addStringPreference(KEY_DEVICE_FRONT_CAMERA,
-                SystemProperties.get("ro.device.front_cam", null));
-        addStringPreference(KEY_DEVICE_REAR_CAMERA,
-                SystemProperties.get("ro.device.rear_cam", null));
-        addStringPreference(KEY_DEVICE_SCREEN_RESOLUTION,
-                SystemProperties.get("ro.device.screen_res", null));
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
