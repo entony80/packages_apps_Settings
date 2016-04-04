@@ -605,7 +605,7 @@
     <string name="disable_navkeys_summary">Enable/Disable Hw Keys</string>
 
     <!-- tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_title">Tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double-tap on the statusbar to turn off the display</string>
 
     <!-- Proximity wake -->
