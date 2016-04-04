@@ -37,6 +37,7 @@
 	
 	<!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">MiGestures</string>
+	<string name="gesture_anywhere_title_summary">Create your own custom gestures for applications and activites</string>
     <string name="gesture_anywhere_enabled_title">MiGestures</string>
     <string name="gesture_anywhere_enabled_summary">Enable to use your own custom gestures</string>
     <string name="gesture_anywhere_position_title">Location</string>
