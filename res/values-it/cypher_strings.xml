@@ -27,7 +27,72 @@
     <string name="allow_lights_title">Luci in modalità non disturbare</string>
 	
 	<string name="visual_settings_title">Visivo</string>
-
+        <string name="cypher_system_updates">Aggiornamento del sistema</string>
+	<string name="navigation_settings_title">Navigazione</string>
+	<string name="navigation_settings_title_summary">Una lunga lista di opzioni per modificare la barra di navigazione</string>
+	<string name="gesture_settings_cypher_title">Gesti</string>
+	<string name="gesture_settings_cypher_title_summary">Dai più vita al tuo dispositivo con un nuovo e facile modo di interagire con le attività</string>
+	<string name="three_finger_gesture">Tre dita schermo</string>
+	<string name="three_finger_gesture_summary">Fai scorrere tre dita sullo schermo per fare uno screenshot</string>
+	
+	<!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">Gesti ovunque</string>
+        <string name="gesture_anywhere_title_summary">Creare i tuo gesti personalizzati per applicazioni e attività</string>
+    <string name="gesture_anywhere_enabled_title">Abilita gesti ovunque</string>
+    <string name="gesture_anywhere_enabled_summary">Abilita il gesto in primo piano ovunque</string>
+    <string name="gesture_anywhere_position_title">Posizione attivazione</string>
+    <string name="gesture_anywhere_position_left">Bordo sinistro</string>
+    <string name="gesture_anywhere_position_right">Bordo destro</string>
+    <string name="gesture_anywhere_gestures_title">Gesti</string>
+    <string name="gesture_anywhere_gestures_summary">Aggiungere, rimuovere e modificare i gesti</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">Aggiungi gesto</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">Ricaricare</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">Scartare</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">Fatto</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">Nome</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">E necessario inserire un nome</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">Gesto salvato in %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">Ok</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">Annulla</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">Caricamento gesti ...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">Non ci sono gesti</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">Mimica</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">Modifica</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">Cancella</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">Gesto cancellato</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">Rinomina gesto</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">Nome gesto</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">Impossibile caricare %s. Assicurarsi di avere memoria disponibile.</string>
+    <string name="trigger_category">Zona avvio</string>
+    <string name="trigger_width_title">Larghezza avvio</string>
+    <string name="trigger_width_summary">Regolare la larghezza della zona di avvio</string>
+    <string name="trigger_top_title">Posizione avvio</string>
+    <string name="trigger_top_summary">Regolare la posizione verticale della zona di avvio</string>
+    <string name="trigger_bottom_title">Altezza avvio</string>
+    <string name="trigger_bottom_summary">Regolare l\'altezza della zona di avvio</string>
+    <string name="picker_activities">Attività</string>
+    <string name="select_custom_app_title">Selezionare un\'applicazione personalizzata</string>
+    <string name="select_custom_activity_title">Selezionare un\'attività personalizzata</string>
+    <string name="profile_applist_title">Applicazioni</string>
+	
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Premere sul colore qui sotto per applicare</string>
@@ -195,6 +260,98 @@
     <string name="shortcut_action_recent">Recenti</string>
     <string name="shortcut_action_power">Schermo spento</string>
     <string name="shortcut_action_search">Cerca in App</string>
+
+    <!-- PA Pie control -->
+    <string name="pa_piecontrol_settings_summary">Personalizzare PA Pie 2.0 controlli, stile, dimensione e colore</string>
+    <string name="pa_pie_control_title">Pie controllo</string>
+    <string name="pa_pie_control_enable_title">Abilita Pie controllo</string>
+    <string name="pa_pie_targets_title">Obiettivi Pie</string>
+    <string name="pa_pie_style_title">Stile Pie</string>
+    <string name="pa_pie_menu_title">Mostra sempre il pulsante del menù</string>
+    <string name="pa_pie_menu_summary">Il tasto menù dovrebbe essere sempre indicato, anche quando non necessario</string>
+    <string name="pa_pie_size_title">Dimensioni Pie</string>
+    <string name="pa_pie_size_summary">Definisce le dimensioni dei controlli del Pie</string>
+    <string name="pa_pie_size_small">Piccolo</string>
+    <string name="pa_pie_size_large">Grande</string>
+    <string name="pa_pie_size_gigantic">Gigantesco</string>
+    <string name="pa_pie_size_monster">Mostro</string>
+    <string name="pa_pie_size_enormous">Enorme</string>
+    <string name="pa_pie_mode_default">Predefinito</string>
+    <string name="pa_pie_gravity_title">Posizione Pie</string>
+    <string name="pa_pie_gravity_summary">Selezionare la posizione in cui verrà collocato il Pie</string>
+    <string name="pa_pie_gravity_bottom">Parte inferiore</string>
+    <string name="pa_pie_gravity_right">Destra</string>
+    <string name="pa_pie_gravity_left">Sinistra</string>
+    <string name="pa_pie_gap_title">Distanza</string>
+    <string name="pa_pie_gap_summary">Regola la distanza che separa gli elementi nel Pie</string>
+    <string name="pa_pie_angle_title">Angolo Pie</string>
+    <string name="pa_pie_angle_summary">Regola l\'angolo dei bordi del Pie al distacco</string>
+    <string name="pa_pie_angle_none">Nessuno (predefinito)</string>
+    <string name="pa_pie_angle_small">Piccolo</string>
+    <string name="pa_pie_angle_big">Normale (predefinito)</string>
+    <string name="pa_pie_angle_huge">Grande</string>
+    <string name="pa_pie_angle_super">Enorme</string>
+    <string name="pa_pie_gap_none">Nessuna</string>
+    <string name="pa_pie_gap_small">Piccolo</string>
+    <string name="pa_pie_gap_big">Grande (predefinito)</string>
+    <string name="pa_pie_gap_huge">Enorme</string>
+    <string name="pa_pie_mode_title">Modalità Pie</string>
+    <string name="pa_pie_mode_summary">Gestire la modalità di animazione e la velocità di avvio</string>
+    <string name="pa_pie_mode_bare">Velocissimo</string>
+    <string name="pa_pie_mode_quick">Veloce</string>
+    <string name="pa_pie_mode_default">Predefinito</string>
+    <string name="pa_pie_mode_slow">Lento</string>
+    <string name="pa_pie_lastapp_title">Ultima App</string>
+    <string name="pa_pie_lastapp_summary">Abilita il pulsante ultima App</string>
+    <string name="pa_pie_killtask_title">Termina App</string>
+    <string name="pa_pie_killtask_summary">Abilita il pulsante termina App</string>
+    <string name="pa_pie_notifications_title">Notifiche</string>
+    <string name="pa_pie_notifications_summary">Pulsante notifiche attivo</string>
+    <string name="pa_pie_settings_panel_title">Pannello impostazioni rapide</string>
+    <string name="pa_pie_settings_panel_summary">Abilita per espandere le impostazioni rapide dal tasto del pannello Pie</string>
+    <string name="pa_pie_screenshot_title">Immagine dello schermo</string>
+    <string name="pa_pie_screenshot_summary">Abilita il pulsante per lo screenshot</string>
+    <string name="pa_pie_color_title">Impostazioni colore Pie</string>
+    <string name="pa_pie_color_style_title">Abilita colori Pie</string>
+    <string name="pa_pie_background_title">Colore di sfondo</string>
+    <string name="pa_pie_select_title">Colore pulsanti</string>
+    <string name="pa_pie_outlines_title">Colore contorno pulsanti</string>
+    <string name="pa_pie_status_clock_title">Colore orologio</string>
+    <string name="pa_pie_status_title">Colore info</string>
+    <string name="pa_pie_chevron_title">Colore bordo esterno</string>
+    <string name="pa_pie_juice_title">Colore batteria</string>
+    <string name="pa_pie_button_color">Colore pulsante</string>
+    <string name="pa_pie_button_color_title">Colore pulsanti</string>
+    <string name="pa_pie_always_right_title">Pie sempre sulla destra</string>
+    <string name="pa_pie_always_right_summary">Pie sarà sempre mostrato a destra, mentre in orizzontale</string>
+    
+    <string name="reset_cyanpop">Cypher</string>
+    <string name="reset_android">Android</string>
+
+    <!-- App Circle sidebar -->
+    <string name="category_app_circle_bar_title">App Circle Bar</string>
+    <string name="app_circle_bar_title">Abilta App Circle Bar</string>
+    <string name="app_circle_bar_summary">Mostra il cerchio e avvia le applicazioni dopo aver toccato il lato destro dello schermo</string>
+    <string name="app_circle_bar_included_apps_title">Applicazioni incluse</string>
+    <string name="app_circle_bar_included_apps_summary">Le applicazioni che verranno mostrate in App Circle Bar</string>
+    <string name="trigger_width_title">Larghezza</string>
+    <string name="trigger_width_summary">Regolare la larghezza della zona di attivazione</string>
+    <string name="trigger_top_title">Verticale</string>
+    <string name="trigger_top_summary">Regolare la posizione verticale della zona di attivazione</string>
+    <string name="trigger_bottom_title">Altezza</string>
+    <string name="trigger_bottom_summary">Regolare l\'altezza della zona di attivazione</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_icon">Stile icona batteria</string>
+    <string name="battery_not_title">Icona della batteria nelle notifiche</string>
+    <string name="battery_not_summary">L\'icona della batteria mostrerà dove il pulsante cancella tutto si presenta</string>
+    <string name="battery_bar_location">Posizione barra batteria</string>
+    <string name="battery_bar_color">Colore della barra batteria</string>
+    <string name="battery_bar">Opzioni barra batteria</string>
+    <string name="battery_bar_style_title">Stile barra batteria</string>
+    <string name="battery_bar_thickness_title">Spessore barra batteria</string>
+    <string name="battery_bar_animate_title">Animazione di ricarica</string>
+    <string name="battery_bar_animate_summary">L\'animazione di ricarica può causare una scarsa esperienza per gli utenti. Attiva a propria discrezione.</string>
 
     <!-- Double tap power button camera vibration toggle -->
     <string name="dbl_tap_vib_title">Doppia pressione sul pulsante accensione per avviare la fotocamera</string>
