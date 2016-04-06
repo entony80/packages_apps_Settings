@@ -120,7 +120,7 @@
 		        android:id="@+id/visual_settings"
 				android:title="@string/visual_settings_title"
 				android:fragment="com.android.settings.cypher.VisualSettings"
-				android:icon="@drawable/ic_visual_settings"
+				android:icon="@drawable/ic_settings_visual"
 				/>
 
         <!-- Lockscreen -->
