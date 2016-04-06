@@ -354,7 +354,7 @@ public class PieColor extends SettingsPreferenceFragment implements OnPreference
                             getOwner().refreshSettings();
                         }
                     })
-                    .setPositiveButton(R.string.reset_temasek,
+                    .setPositiveButton(R.string.reset_cypher,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,
