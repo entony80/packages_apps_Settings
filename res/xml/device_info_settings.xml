@@ -22,12 +22,13 @@
                 android:enabled="false"
                 android:layout="@layout/cypher_logo_rom" />
 				
-		<!-- Cypher system updates - launches cota apk -->
-		<PreferenceScreen android:key="cypher_update"
-		        android:title="@string/cypher_system_updates">
-			<intent android:action="android.intent.action.MAIN"
-			        android:targetPackage="com.cypher.updates"
-					android:targetClass="com.cypher.updates.activities.MainActivity" />
+	<!-- Cypher system updates - launches cota apk -->
+	<PreferenceScreen android:key="cypher_update"
+	        android:title="@string/cypher_system_updates">
+		<intent android:action="android.intent.action.MAIN"
+		        android:targetPackage="com.cypher.updates"
+			android:targetClass="com.cypher.updates.activities.MainActivity" />
+        </PreferenceScreen>
 
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
