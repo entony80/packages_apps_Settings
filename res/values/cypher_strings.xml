@@ -153,6 +153,7 @@
     <string name="navigation_bar_size_36_dp">36 dp</string>
     <string name="navigation_bar_size_30_dp">30 dp</string>
     <string name="navigation_bar_size_24_dp">24 dp</string>
+	<string name="navigation_bar_size_20_dp">20 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
     <string name="nav_bar_title">Navigation bar</string>
     <string name="navbar_enable_bar_title">Navigation bar buttons</string>
