@@ -54,8 +54,12 @@ public class DisplayTemperature extends DialogPreference {
     public DisplayTemperature(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
+<<<<<<< HEAD
 
 		mLiveDisplay = LiveDisplayManager.getInstance(mContext);
+=======
+        mLiveDisplay = LiveDisplayManager.getInstance(mContext);
+>>>>>>> 79a3afc... livedisplay: Update Settings for new LiveDisplay API
         mConfig = mLiveDisplay.getConfig();
 
         setDialogLayoutResource(R.layout.display_temperature);

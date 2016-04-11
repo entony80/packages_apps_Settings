@@ -634,6 +634,10 @@
     <string name="color_green_title">Green</string>
     <string name="color_blue_title">Blue</string>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 79a3afc... livedisplay: Update Settings for new LiveDisplay API
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
