@@ -24,7 +24,7 @@ import android.preference.PreferenceScreen;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
-import android.provider.settings;
+import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.Utils;
 
 import com.android.internal.logging.MetricsLogger;
