@@ -117,10 +117,10 @@
 				
 		<!-- Visual -->
 		<dashboard-tile
-		        android:id="@+id/visual_settings"
-				android:title="@string/visual_settings_title"
-				android:fragment="com.android.settings.cypher.VisualSettings"
-				android:icon="@drawable/ic_settings_visual"
+		        android:id="@+id/jasper_settings"
+				android:title="@string/jasper_settings_title"
+				android:fragment="com.android.settings.cypher.JasperSettings"
+				android:icon="@drawable/ic_settings_jasper"
 				/>
 
         <!-- Lockscreen -->

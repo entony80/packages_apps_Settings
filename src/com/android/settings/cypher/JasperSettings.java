@@ -37,16 +37,16 @@ import java.util.List;
 
 import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
-public class VisualSettings extends SettingsPreferenceFragment
+public class JasperSettings extends SettingsPreferenceFragment
         implements Indexable {
 
-    private static final String TAG = VisualSettings.class.getSimpleName();
+    private static final String TAG = JasperSettings.class.getSimpleName();
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.visual_settings);
+        addPreferencesFromResource(R.xml.jasper_settings);
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
     }
@@ -66,7 +66,7 @@ public class VisualSettings extends SettingsPreferenceFragment
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.visual_settings;
+                    sir.xmlResId = R.xml.jasper_settings;
                     result.add(sir);
 
                     return result;

@@ -315,12 +315,12 @@ public final class SearchIndexableResources {
                         WifiCallingSettings.class.getName(),
                         R.drawable.ic_settings_wireless));
 						
-		sResMap.put(VisualSettings.class.getName(),
+		sResMap.put(JasperSettings.class.getName(),
                 new SearchIndexableResource(
-                        Ranking.getRankForClassName(VisualSettings.class.getName()),
-                        R.xml.visual_settings,
-                        VisualSettings.class.getName(),
-                        R.drawable.ic_settings_visual));
+                        Ranking.getRankForClassName(JasperSettings.class.getName()),
+                        R.xml.jasper_settings,
+                        JasperSettings.class.getName(),
+                        R.drawable.ic_settings_jasper));
 
         // CyanogenMod Settings
         sResMap.put(ButtonSettings.class.getName(),
