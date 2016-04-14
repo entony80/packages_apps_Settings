@@ -23,9 +23,13 @@ import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 
 import com.android.settings.R;
+<<<<<<< HEAD
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+=======
+import com.android.settings.search.BaseSearchIndexProvider;
+>>>>>>> origin/mm6.0
 import com.android.settings.Utils;
 
 import java.util.ArrayList;
