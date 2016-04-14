@@ -61,17 +61,9 @@
                           android:layout_below="@id/title"
                           android:layout_alignStart="@android:id/title"
                           android:textAppearance="@style/TextAppearance.Small"
-                          android:layout_alignParentStart="true"
-                          android:layout_toStartOf="@+id/dashboard_switch"
                           android:textColor="?android:attr/textColorSecondary" />
 
             </RelativeLayout>
-
-            <Switch android:id="@+id/dashboard_switch"
-                    android:visibility="gone"
-                    android:paddingEnd="@dimen/action_bar_switch_padding"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"/>
 
         </LinearLayout>
 
