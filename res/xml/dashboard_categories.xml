@@ -132,8 +132,6 @@
                 <extra android:name="filter_type" android:value="0" />
         </dashboard-tile>
 
-        <external-tiles />
-
         <!-- Battery -->
         <dashboard-tile
                 android:id="@+id/battery_settings"
