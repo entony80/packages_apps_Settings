@@ -26,7 +26,7 @@
 
     <string name="allow_lights_title">Luci in modalità non disturbare</string>
 	
-	<string name="visual_settings_title">Visivo</string>
+	<string name="jasper_settings_title">Visivo</string>
         <string name="cypher_system_updates">Aggiornamento del sistema</string>
 	<string name="navigation_settings_title">Navigazione</string>
 	<string name="navigation_settings_title_summary">Una lunga lista di opzioni per modificare la barra di navigazione</string>
