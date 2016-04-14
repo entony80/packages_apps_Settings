@@ -54,7 +54,7 @@
             android:fragment="com.android.settings.aicp.PulseSettings" />   
 	    
 
-    <com.android.settings.aicp.NavbarSizePreference
+    <com.android.settings.cypher.widget.NavbarSizePreference
             android:key="navigation_bar_size"
             android:title="@string/navigation_bar_size_title" />
 
