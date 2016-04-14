@@ -20,6 +20,11 @@ import com.android.internal.logging.MetricsLogger;
 import android.preference.CheckBoxPreference;
 
 import android.os.UserHandle;
+import android.view.Display;
+import android.view.IWindowManager;
+import android.view.WindowManager;
+import android.view.WindowManagerGlobal;
+import android.view.WindowManagerImpl;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DropDownPreference.Callback;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -296,6 +301,28 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     (proximityCheckOnWakeDefault ? 1 : 0)) == 1);
         }
 
+    }
+	
+	private int getDefaultDensity() {
+        IWindowManager wm = IWindowManager.Stub.asInterface(ServiceManager.checkService(
+                Context.WINDOW_SERVICE));
+        try {
+            return wm.getInitialDisplayDensity(Display.DEFAULT_DISPLAY);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return DisplayMetrics.DENSITY_DEVICE;
+    }
+
+    private int getCurrentDensity() {
+        IWindowManager wm = IWindowManager.Stub.asInterface(ServiceManager.checkService(
+                Context.WINDOW_SERVICE));
+        try {
+            return wm.getBaseDisplayDensity(Display.DEFAULT_DISPLAY);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return DisplayMetrics.DENSITY_DEVICE;
     }
 
     private static boolean allowAllRotations(Context context) {
