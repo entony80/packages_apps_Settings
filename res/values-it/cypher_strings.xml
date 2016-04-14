@@ -741,4 +741,8 @@
     <string name="heads_up_time_out_8sec">8 secondi</string>
     <string name="heads_up_time_out_10sec">10 secondi</string>
 
+    <!-- DoubleTap2Wake Doze -->
+    <string name="doze_wakeup_doubletap_title">Doppio Tocco per attivare</string>
+    <string name="doze_wakeup_doubletap_summary_on">Richiede un doppio tocco sullo schermo per riattivare il dispositivo  di un impulso di dosi</string>
+    <string name="doze_wakeup_doubletap_summary_off">Richiede un semplice tocco sullo schermo per attivare il dispositivo (Predefinito)</string>
 </resources>
