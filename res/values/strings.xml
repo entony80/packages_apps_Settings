@@ -6119,7 +6119,7 @@
 
     <!-- Sound & notification > Advanced section: Title for managing notification listeners option. [CHAR LIMIT=30] -->
     <string name="manage_notification_access_title">Notification access</string>
-	<string name="manage_notification_access_title">Grant which apps can or cannot present notifications</string>
+	<string name="manage_notification_access_summary">Grant which apps can or cannot present notifications</string>
 
     <!-- Summary of preference to manage notification listeners, when none are enabled -->
     <string name="manage_notification_access_summary_zero">Apps cannot read notifications</string>
