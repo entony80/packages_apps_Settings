@@ -74,18 +74,6 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_COLOR_SETTINGS = "screencolor_settings";
 
     private static final String KEY_LIVE_DISPLAY_COLOR_PROFILE = "live_display_color_profile";
-	
-	public static final int MODE_OFF = 0;
-    public static final int MODE_NIGHT = 1;
-    public static final int MODE_AUTO = 2;
-    public static final int MODE_OUTDOOR = 3;
-    public static final int MODE_DAY = 4;
-
-    public static final int MODE_OFF = 0;
-    public static final int MODE_NIGHT = 1;
-    public static final int MODE_AUTO = 2;
-    public static final int MODE_OUTDOOR = 3;
-    public static final int MODE_DAY = 4;
 
     private final Handler mHandler = new Handler();
     private final SettingsObserver mObserver = new SettingsObserver();
