@@ -2179,6 +2179,10 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
+		
+		<!-- Gesture anywhere -->
+        <activity android:name=".temasek.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".temasek.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
         <!-- Navigation settings activity. -->
         <activity android:name="Settings$NavigationSettingsActivity"
