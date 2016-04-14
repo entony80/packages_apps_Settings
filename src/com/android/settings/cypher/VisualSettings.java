@@ -16,41 +16,62 @@
 
 package com.android.settings.cypher;
 
+import android.content.Context;
 import android.os.Bundle;
-import android.content.res.Resources;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.provider.SearchIndexableResource;
 
-import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
-import android.provider.settings;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 import com.android.settings.Utils;
 
-import com.android.internal.logging.MetricsLogger;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class VisualSettings extends SettingsPreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+        implements Indexable {
 
-    private static final String TAG = "VisualSettings";
-	
-	 @Override
-    protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
-    }
+    private static final String TAG = VisualSettings.class.getSimpleName();
 
-     @Override
+    @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
         addPreferencesFromResource(R.xml.visual_settings);
-    }
-	
-	@Override
-    public void onResume() {
-        super.onResume();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        return false;
-    } 
+    @Override
+    protected int getMetricsCategory() {
+        // todo add a constant in MetricsLogger.java
+        return CMMetricsLogger.MAIN_SETTINGS;
+    }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.visual_settings;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }

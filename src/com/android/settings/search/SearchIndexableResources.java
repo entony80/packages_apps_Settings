@@ -314,6 +314,13 @@ public final class SearchIndexableResources {
                         R.xml.wifi_calling_settings,
                         WifiCallingSettings.class.getName(),
                         R.drawable.ic_settings_wireless));
+						
+		sResMap.put(VisualSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(VisualSettings.class.getName()),
+                        R.xml.visual_settings,
+                        VisualSettings.class.getName(),
+                        R.drawable.ic_settings_visual));
 
         // CyanogenMod Settings
         sResMap.put(ButtonSettings.class.getName(),
