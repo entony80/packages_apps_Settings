@@ -24,24 +24,24 @@
             android:dialogTitle="@string/perf_profile_title"
             android:title="@string/perf_profile_title"
             android:persistent="false" />
+			
+		<PreferenceScreen
+            android:key="battery_light"
+            android:title="@string/battery_light_title"
+			android:summary="@string/battery_light_title_summary"
+            android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
+				
+		<PreferenceScreen
+		    android:key="live_battery"
+		    android:title="@string/battery_bar"
+		    android:summary="@string/battery_bar_summary"
+			android:fragment="com.android.settings.cypher.fragments.BatteryBar" />
 
         <com.android.settings.cyanogenmod.CMSecureSettingSwitchPreference
             android:key="app_perf_profiles_enabled"
             android:title="@string/autoperf_title"
             android:summary="@string/autoperf_summary"
             android:defaultValue="true" />
-			
-		<PreferenceScreen
-                android:key="battery_light"
-                android:title="@string/battery_light_title"
-				android:summary="@string/battery_light_title_summary"
-                android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
-				
-		<PreferenceScreen
-		        android:key="live_battery"
-				android:title="@string/battery_bar"
-				android:summary="@string/battery_bar_summary"
-				android:fragment="com.android.settings.cypher.fragments.BatteryBar" />
 
         <!-- Bar color -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
