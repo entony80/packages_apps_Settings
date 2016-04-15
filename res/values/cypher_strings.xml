@@ -551,7 +551,7 @@
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU status</string>
 
     <!-- Snackbar action button -->
     <string name="dev_settings_action_button">Settings</string>
@@ -744,6 +744,8 @@
     <string name="heads_up_time_out_6sec">6 seconds</string>
     <string name="heads_up_time_out_8sec">8 seconds</string>
     <string name="heads_up_time_out_10sec">10 seconds</string>
+	<string name="heads_up_time_out_12sec">12 seconds</string>
+	<string name="heads_up_time-out-14sec">14 seconds</string>
 	
 	<!-- DoubleTap2Wake Doze -->
 	<string name="doze_wakeup_doubletap_title">Tap to wake on doze</string>
