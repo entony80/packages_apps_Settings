@@ -39,5 +39,15 @@
 				android:key="migestures"
 				android:summary="@string/gesture_anywhere_title_summary"
 				android:fragment="com.android.settings.cypher.gestureanywhere.GestureAnywhereSettings" />
+				
+		<!-- CMActions -->
+		<PreferenceScreen
+		        android:title="@string/cm_gesture_title"
+				android:key="cmgestures"
+				android:summary="@string/cm_gesture_title_summary">
+			<intent android:action="android.intent.action.MAIN"
+		        android:targetPackage="com.cyanogenmod.settings.device"
+			    android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
+		</PreferenceScreen>
 		
 </PreferenceScreen>
