@@ -58,6 +58,7 @@ import com.android.settings.wifi.WifiSettings;
 
 import com.android.settings.ButtonSettings;
 import com.android.settings.cyanogenmod.StatusBarSettings;
+import com.android.settings.cypher.JasperSettings;
 
 import java.util.Collection;
 import java.util.HashMap;
