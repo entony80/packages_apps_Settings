@@ -745,7 +745,7 @@
     <string name="heads_up_time_out_8sec">8 seconds</string>
     <string name="heads_up_time_out_10sec">10 seconds</string>
 	<string name="heads_up_time_out_12sec">12 seconds</string>
-	<string name="heads_up_time-out-14sec">14 seconds</string>
+	<string name="heads_up_time_out_14sec">14 seconds</string>
 	
 	<!-- DoubleTap2Wake Doze -->
 	<string name="doze_wakeup_doubletap_title">Tap to wake on doze</string>
