@@ -95,8 +95,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
     private String[] mModeSummaries;
 
     private boolean mHasDisplayModes = false;
-	
-	private LiveDisplayManager mLiveDisplayManager;
+
+    private LiveDisplayManager mLiveDisplayManager;
     private LiveDisplayConfig mConfig;
 
     private CMHardwareManager mHardware;
@@ -118,7 +118,7 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
                 findPreference(KEY_CATEGORY_ADVANCED);
 
         int adaptiveMode = mLiveDisplayManager.getMode();
-		
+
         mLiveDisplay = (ListPreference) findPreference(KEY_LIVE_DISPLAY);
         mLiveDisplay.setValue(String.valueOf(adaptiveMode));
 
@@ -384,8 +384,8 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
 
         @Override
         public List<String> getNonIndexableKeys(Context context) {
-             final CMHardwareManager hardware = CMHardwareManager.getInstance(context);
-             final LiveDisplayConfig config = LiveDisplayManager.getInstance(context).getConfig();
+            final CMHardwareManager hardware = CMHardwareManager.getInstance(context);
+            final LiveDisplayConfig config = LiveDisplayManager.getInstance(context).getConfig();
 
             ArrayList<String> result = new ArrayList<String>();
             if (!hardware.isSupported(FEATURE_DISPLAY_MODES)) {
@@ -394,10 +394,10 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
             if (!config.hasFeature(MODE_OUTDOOR)) {
                 result.add(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
             }
-            if (!config.hasFeature(FEATURE_CABC)) {
+            if (!config.hasFeature(FEATURE_COLOR_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_COLOR_ENHANCE);
             }
-            if (!hardware.isSupported(FEATURE_ADAPTIVE_BACKLIGHT)) {
+            if (!config.hasFeature(FEATURE_CABC)) {
                 result.add(KEY_LIVE_DISPLAY_LOW_POWER);
             }
             if (!isPostProcessingSupported(context)) {
