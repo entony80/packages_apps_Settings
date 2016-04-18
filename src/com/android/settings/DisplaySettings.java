@@ -17,6 +17,9 @@
 
 package com.android.settings;
 import com.android.internal.logging.MetricsLogger;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.preference.CheckBoxPreference;
 
 import android.os.UserHandle;
@@ -43,6 +46,7 @@ import android.app.Activity;
 import android.app.ActivityManagerNative;
 import android.app.Dialog;
 import android.app.IActivityManager;
+import android.app.ProgressDialog;
 import android.app.UiModeManager;
 import android.app.admin.DevicePolicyManager;
 import android.content.ContentResolver;

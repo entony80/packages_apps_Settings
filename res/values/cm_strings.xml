@@ -995,6 +995,8 @@
     <!-- Protected apps lockpattern reset button -->
     <string name="lockpattern_reset_button">Reset pattern</string>
     <string name="lockpattern_settings_reset_summary">Enter primary email account and associated password to reset pattern lock</string>
+	
+	<string name="lcd_density_prompt_message">Some apps may not function at non-standard DPI.\n\nThis will restart your device.</string>
 
     <!-- Protected Apps -->
     <string name="menu_hidden_apps_delete">Reset</string>
