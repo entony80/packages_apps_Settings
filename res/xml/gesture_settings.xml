@@ -33,6 +33,12 @@
                 android:summary="@string/tap_to_wake_summary"
                 android:persistent="false" />
 				
+		<SwitchPreference
+                android:key="camera_double_tap_power_gesture"
+                android:title="@string/camera_double_tap_power_gesture_title"
+                android:summary="@string/camera_double_tap_power_gesture_desc"
+                android:persistent="false" />
+				
 		<!-- Three-finger gesture -->
 		<com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
 		        android:title="@string/three_finger_gesture" 

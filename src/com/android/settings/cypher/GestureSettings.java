@@ -27,12 +27,19 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.Utils;
 
+import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
+
 import com.android.internal.logging.MetricsLogger;
 
 public class GestureSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "GestureSettings";
+	
+	private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
+            = "camera_double_tap_power_gesture";
+			
+	private SwitchPreference mCameraDoubleTapPowerGesture;
 	
 	 @Override
     protected int getMetricsCategory() {
@@ -43,7 +50,21 @@ public class GestureSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.gesture_settings);
+		
+	    // Double press power to launch camera.
+        mCameraDoubleTapPowerGesture
+                    = (SwitchPreference) findPreference(KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE);
     }
+	if (mCameraDoubleTapPowerGesture != null &&
+                    isCameraDoubleTapPowerGestureAvailable(getResources())) {
+                // Update double tap power to launch camera if available.
+                mCameraDoubleTapPowerGesture.setOnPreferenceChangeListener(this);
+                int cameraDoubleTapPowerDisabled = Settings.Secure.getInt(
+                        getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0);
+                mCameraDoubleTapPowerGesture.setChecked(cameraDoubleTapPowerDisabled == 0);
+            } else {
+                mCameraDoubleTapPowerGesture = null;
+            }
 
     @Override
     public void onResume() {
@@ -51,6 +72,17 @@ public class GestureSettings extends SettingsPreferenceFragment
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+		if (preference == mCameraDoubleTapPowerGesture) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
+                    value ? 0 : 1 /* Backwards because setting is for disabling */);
+            return true;
+        }
         return false;
     }
+	
+	private static boolean isCameraDoubleTapPowerGestureAvailable(Resources res) {
+        return res.getBoolean(
+                com.android.internal.R.bool.config_cameraDoubleTapPowerGestureEnabled);
+	}
 }
