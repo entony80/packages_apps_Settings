@@ -59,6 +59,6 @@
 		        android:title="@string/pa_pie_control_title"
 				android:key="pi_control_key"
 				android:summary="@string/pa_pie_control_title_summary"
-				android:fragment="com.android.settings.cypher.fragments.PieControls" />
+				android:fragment="com.android.settings.cypher.fragments.PieControl" />
 		
 </PreferenceScreen>
