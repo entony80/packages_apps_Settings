@@ -21,6 +21,7 @@ import android.content.res.Resources;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -54,17 +55,18 @@ public class GestureSettings extends SettingsPreferenceFragment
 	    // Double press power to launch camera.
         mCameraDoubleTapPowerGesture
                     = (SwitchPreference) findPreference(KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE);
+					
+		if (mCameraDoubleTapPowerGesture != null &&
+                isCameraDoubleTapPowerGestureAvailable(getResources())) {
+            // Update double tap power to launch camera if available.
+            mCameraDoubleTapPowerGesture.setOnPreferenceChangeListener(this);
+            int cameraDoubleTapPowerDisabled = Settings.Secure.getInt(
+                    getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0);
+            mCameraDoubleTapPowerGesture.setChecked(cameraDoubleTapPowerDisabled == 0);
+        } else {
+            mCameraDoubleTapPowerGesture = null;
+        }
     }
-	if (mCameraDoubleTapPowerGesture != null &&
-                    isCameraDoubleTapPowerGestureAvailable(getResources())) {
-                // Update double tap power to launch camera if available.
-                mCameraDoubleTapPowerGesture.setOnPreferenceChangeListener(this);
-                int cameraDoubleTapPowerDisabled = Settings.Secure.getInt(
-                        getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0);
-                mCameraDoubleTapPowerGesture.setChecked(cameraDoubleTapPowerDisabled == 0);
-            } else {
-                mCameraDoubleTapPowerGesture = null;
-            }
 
     @Override
     public void onResume() {
