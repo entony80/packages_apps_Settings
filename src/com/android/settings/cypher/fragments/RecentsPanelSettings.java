@@ -70,7 +70,6 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         updateRecentsLocation(location);
-        updateDisableStockRecents();
     }
 
     @Override
@@ -96,10 +95,8 @@ public class RecentsPanelSettings extends SettingsPreferenceFragment implements
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             updateRecentsLocation(location);
             return true;
-        } else {
-            return false;
         }
-        return true;
+        return false;
     }
 
     private void updateRecentsOptions(boolean enabled) {
