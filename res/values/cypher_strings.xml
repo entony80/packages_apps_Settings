@@ -755,5 +755,29 @@
 	<!-- CMActions -->
 	<string name="cm_gesture_title">Motion gestures</string>
 	<string name="cm_gesture_title_summary">Interact with your device with motion hand events</string>
+	
+	<!-- Recents panel settings -->
+	<string name="recents_panel_title">Recents</string>
+	<string name="recents_panel_title_summary">Navigate the recents panel with several productivity elements</string>
+	<string name="recents_panel_settings">Settings</string>
+	
+	<!-- Search in recents -->
+	<string name="recents_show_searchbar">Search-in</string>
+	<string name="recents_show_searchbar_summary">Show the default system search bar in the recents panel</string>
+	
+	<!-- Show clear all recents button -->
+	<string name="show_clear_all_recents_button_title">Clear-all button</string>
+	<string name="show_clear_all_recents_button_summary">Clear all of your recents tabs with the press of a button</string>
+	
+	<!-- Clear all recents location -->
+	<string name="recents_clear_all_location_title">Clear-all location</string>
+	<string name="recents_clear_all_location_bottom_right">Bottom right</string>
+	<string name="recents_clear_all_location_bottom_left">Bottom left</string>
+	
+	
+	<!-- RAM Indicator -->
+	<string name="recents_show_membar_title">RAM indicator</string>
+	<string name="recents_show_membar_summary_on">RAM indicator will be shown in the recents panel</string>
+	<string name="recents_show_membar_summary_off">RAM indicator will not be shown in the recents panel</string>
 
 </resources>

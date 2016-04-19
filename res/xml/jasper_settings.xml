@@ -37,6 +37,13 @@
 				android:key="wheel_key"
 				android:summary="@string/app_circle_bar_summary"
 				android:fragment="com.android.settings.cypher.fragments.AppCircleBar" />
+				
+		<!-- Recents Panel -->
+		<PreferenceScreen
+		        android:title="@string/recents_panel_title"
+				android:key="recents_key"
+				android:summary="@string/recents_panel_title_summary"
+				android:fragment="com.android.settings.cypher.fragments.RecentsPanelSettings" />
 		
 		<!-- Status bar -->
         <PreferenceScreen
