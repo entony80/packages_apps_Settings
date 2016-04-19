@@ -162,6 +162,7 @@ public class DashboardSummary extends InstrumentedFragment {
                 DashboardTileView tileView = new DashboardTileView(context);
                 updateTileView(context, res, tile, tileView.getImageView(),
                         tileView.getTitleTextView(), tileView.getStatusTextView(),
+                        tileView.getSwitchView());
 
                 tileView.setTile(tile);
 
