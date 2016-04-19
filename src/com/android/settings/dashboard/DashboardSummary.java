@@ -37,7 +37,6 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import com.android.internal.logging.MetricsLogger;
@@ -163,7 +162,6 @@ public class DashboardSummary extends InstrumentedFragment {
                 DashboardTileView tileView = new DashboardTileView(context);
                 updateTileView(context, res, tile, tileView.getImageView(),
                         tileView.getTitleTextView(), tileView.getStatusTextView(),
-                        tileView.getSwitchView());
 
                 tileView.setTile(tile);
 
@@ -178,7 +176,7 @@ public class DashboardSummary extends InstrumentedFragment {
     }
 
     public void updateTileView(Context context, Resources res, DashboardTile tile,
-            ImageView tileIcon, TextView tileTextView, TextView statusTextView, Switch switchBar) {
+            ImageView tileIcon, TextView tileTextView, TextView statusTextView) {
 
         if (!TextUtils.isEmpty(tile.iconPkg)) {
             try {
@@ -217,20 +215,6 @@ public class DashboardSummary extends InstrumentedFragment {
             statusTextView.setText(summary);
         } else {
             statusTextView.setVisibility(View.GONE);
-        }
-
-        if (tile.switchControl != null) {
-            boolean isPrimary = UserHandle.getCallingUserId() == UserHandle.USER_OWNER;
-            int dashboardSwitches = isPrimary ? getDashboardSwitches(context) : 0;
-
-            if (dashboardSwitches == 0) {
-                switchBar.setVisibility(View.GONE);
-            }
-            if (dashboardSwitches == 1) {
-                switchBar.setVisibility(View.VISIBLE);
-            }
-        } else {
-            // do nothing
         }
     }
 
