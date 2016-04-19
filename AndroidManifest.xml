@@ -2182,8 +2182,8 @@
         </receiver>
 		
 		<!-- Gesture anywhere -->
-        <activity android:name=".temasek.gestureanywhere.GestureAnywhereBuilderActivity" />
-        <activity android:name=".temasek.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+        <activity android:name=".cypher.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".cypher.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
         <!-- Navigation settings activity. -->
         <activity android:name="Settings$NavigationSettingsActivity"
