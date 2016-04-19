@@ -41,13 +41,9 @@ public class DisplayColor extends DialogPreference {
     private static final String TAG = "ColorCalibration";
 
     private final Context mContext;
-<<<<<<< HEAD
-
 	private final LiveDisplayManager mLiveDisplay;
-=======
     private final LiveDisplayManager mLiveDisplay;
->>>>>>> 79a3afc... livedisplay: Update Settings for new LiveDisplay API
-
+	
     // These arrays must all match in length and order
     private static final int[] SEEKBAR_ID = new int[] {
         R.id.color_red_seekbar,
@@ -70,12 +66,7 @@ public class DisplayColor extends DialogPreference {
         super(context, attrs);
 
         mContext = context;
-<<<<<<< HEAD
-
 		mLiveDisplay = LiveDisplayManager.getInstance(mContext);
-=======
-        mLiveDisplay = LiveDisplayManager.getInstance(mContext);
->>>>>>> 79a3afc... livedisplay: Update Settings for new LiveDisplay API
 
         setDialogLayoutResource(R.layout.display_color_calibration);
     }
@@ -94,11 +85,7 @@ public class DisplayColor extends DialogPreference {
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
-<<<<<<< HEAD
 		System.arraycopy(mLiveDisplay.getColorAdjustment(), 0, mOriginalColors, 0, 3);
-=======
-        System.arraycopy(mLiveDisplay.getColorAdjustment(), 0, mOriginalColors, 0, 3);
->>>>>>> 79a3afc... livedisplay: Update Settings for new LiveDisplay API
         System.arraycopy(mOriginalColors, 0, mCurrentColors, 0, 3);
 
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
@@ -107,10 +94,6 @@ public class DisplayColor extends DialogPreference {
             mSeekBars[i] = new ColorSeekBar(seekBar, value, i);
             mSeekBars[i].mSeekBar.setMinimum(0.1f);
             mSeekBars[i].mSeekBar.setMaximum(1.0f);
-<<<<<<< HEAD
-=======
-
->>>>>>> 79a3afc... livedisplay: Update Settings for new LiveDisplay API
             mSeekBars[i].mSeekBar.setProgressFloat(mCurrentColors[i]);
             int percent = Math.round(100F * mCurrentColors[i]);
             value.setText(String.format("%d%%", percent));
@@ -129,13 +112,8 @@ public class DisplayColor extends DialogPreference {
             @Override
             public void onClick(View v) {
                 for (int i = 0; i < mSeekBars.length; i++) {
-<<<<<<< HEAD
                      mSeekBars[i].mSeekBar.setProgressFloat(1.0f);
                      mCurrentColors[i] = 1.0f;
-=======
-                    mSeekBars[i].mSeekBar.setProgressFloat(1.0f);
-                    mCurrentColors[i] = 1.0f;
->>>>>>> 79a3afc... livedisplay: Update Settings for new LiveDisplay API
                 }
                 updateColors(mCurrentColors);
             }
