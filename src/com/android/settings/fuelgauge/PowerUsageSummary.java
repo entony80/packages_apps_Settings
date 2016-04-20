@@ -258,8 +258,10 @@ public class PowerUsageSummary extends PowerUsageBase
         BatteryEntry entry = pgp.getInfo();
         PowerUsageDetail.startBatteryDetailPage((SettingsActivity) getActivity(), mStatsHelper,
                 mStatsType, entry, true);
-	if (preference == mDozeyDoze) {
-            return writeDozeyDozeOptions();
+	if (preference == mDozePowersave) {
+            writeDozeyDozeOptions();
+
+            return true;
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
 	}
@@ -288,7 +290,7 @@ public class PowerUsageSummary extends PowerUsageBase
     }
      
     private void updateDozeyDozeOptions() {
-        updateSwitchPreference(mDozeyDoze, SystemProperties.getBoolean(DOZEY_DOZE_PROPERTY, false));
+        updateSwitchPreference(mDozePowersave, SystemProperties.getBoolean(DOZEY_DOZE_PROPERTY, false));
     }
     
     void updateSwitchPreference(SwitchPreference switchPreference, boolean value) {
@@ -296,7 +298,7 @@ public class PowerUsageSummary extends PowerUsageBase
     }
 
     private void writeDozeyDozeOptions() {
-        SystemProperties.set(DOZEY_DOZE_PROPERTY, mDozeyDoze.isChecked() ? "true" : "false");
+        SystemProperties.set(DOZEY_DOZE_PROPERTY, mDozePowersave.isChecked() ? "true" : "false");
         pokeSystemProperties();
     }
 	
