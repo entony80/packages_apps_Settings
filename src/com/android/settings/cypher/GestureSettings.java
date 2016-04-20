@@ -17,6 +17,7 @@
 package com.android.settings.cypher;
 
 import android.os.Bundle;
+import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -30,6 +31,11 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.Utils;
+
+import cyanogenmod.providers.CMSettings;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
 
