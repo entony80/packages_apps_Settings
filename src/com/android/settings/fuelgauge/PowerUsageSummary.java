@@ -38,6 +38,11 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.os.Process;
 import android.os.UserHandle;
+import android.os.AsyncTask;
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
@@ -45,6 +50,7 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.SparseArray;
 import android.util.TypedValue;
 import android.view.Menu;
@@ -61,6 +67,7 @@ import com.android.settings.Settings.HighPowerApplicationsActivity;
 import com.android.settings.SettingsActivity;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.Utils;
+import com.android.settings.DevelopmentSettings;
 
 import cyanogenmod.power.PerformanceManager;
 import cyanogenmod.providers.CMSettings;
@@ -88,6 +95,10 @@ public class PowerUsageSummary extends PowerUsageBase
     private static final String KEY_BATTERY_HISTORY = "battery_history";
     private static final String KEY_PERF_PROFILE = "pref_perf_profile";
     private static final String KEY_PER_APP_PROFILES = "app_perf_profiles_enabled";
+	private static final String DOZEY_DOZE_PROPERTY = "persist.sys.dozey_doze";
+    private static final String DOZE_POWERSAVE_KEY = "dozey_doze";
+    private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
+    private final ArrayList<SwitchPreference> mResetSwitchPrefs  = new ArrayList<SwitchPreference>();
 
     private static final String KEY_BATTERY_SAVER = "low_power";
 
@@ -102,6 +113,8 @@ public class PowerUsageSummary extends PowerUsageBase
     private ListPreference mPerfProfilePref;
     private SwitchPreference mPerAppProfiles;
     private SwitchPreference mBatterySaverPref;
+	private SwitchPreference mDozeyDoze;
+    private boolean mDontPokeProperties;
 
     private String[] mPerfProfileEntries;
     private String[] mPerfProfileValues;
@@ -137,6 +150,9 @@ public class PowerUsageSummary extends PowerUsageBase
 
         mPowerManager = (PowerManager)getSystemService(Context.POWER_SERVICE);
         mPerf = PerformanceManager.getInstance(getActivity());
+		
+		mDozePowersave = findAndInitSwitchPref(DOZEY_DOZE_KEY);
+        updateDozeyDozeOptions();
 
         addPreferencesFromResource(R.xml.power_usage_summary);
         mHistPref = (BatteryHistoryPreference) findPreference(KEY_BATTERY_HISTORY);
@@ -178,6 +194,16 @@ public class PowerUsageSummary extends PowerUsageBase
             mPerfProfilePref.setOnPreferenceChangeListener(this);
         }
         mPerformanceProfileObserver = new PerformanceProfileObserver(new Handler());
+    }
+	
+	private SwitchPreference findAndInitSwitchPref(String key) {
+        SwitchPreference pref = (SwitchPreference) findPreference(key);
+        if (pref == null) {
+            throw new IllegalArgumentException("Cannot find preference with key = " + key);
+        }
+        mAllPrefs.add(pref);
+        mResetSwitchPrefs.add(pref);
+        return pref;
     }
 
     @Override
@@ -231,7 +257,11 @@ public class PowerUsageSummary extends PowerUsageBase
         BatteryEntry entry = pgp.getInfo();
         PowerUsageDetail.startBatteryDetailPage((SettingsActivity) getActivity(), mStatsHelper,
                 mStatsType, entry, true);
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+		} else if (preference == mDozeyDoze) {
+            writeDozeyDozeOptions();
+	    } else {
+             return super.onPreferenceTreeClick(preferenceScreen, preference);
+		}
     }
 
     @Override
@@ -247,6 +277,53 @@ public class PowerUsageSummary extends PowerUsageBase
             }
         }
         return false;
+    }
+	
+	void pokeSystemProperties() {
+        if (!mDontPokeProperties) {
+            //noinspection unchecked
+            (new SystemPropPoker()).execute();
+        }
+    }
+     
+    private void updateDozeyDozeOptions() {
+        updateSwitchPreference(mDozeyDoze, SystemProperties.getBoolean(DOZEY_DOZE_PROPERTY, false));
+    }
+    
+    void updateSwitchPreference(SwitchPreference switchPreference, boolean value) {
+        switchPreference.setChecked(value);
+    }
+
+    private void writeDozeyDozeOptions() {
+        SystemProperties.set(DOZEY_DOZE_PROPERTY, mDozeyDoze.isChecked() ? "true" : "false");
+        pokeSystemProperties();
+    }
+	
+	static class SystemPropPoker extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+            String[] services;
+            try {
+                services = ServiceManager.listServices();
+            } catch (RemoteException e) {
+                return null;
+            }
+            for (String service : services) {
+                IBinder obj = ServiceManager.checkService(service);
+                if (obj != null) {
+                    Parcel data = Parcel.obtain();
+                    try {
+                        obj.transact(IBinder.SYSPROPS_TRANSACTION, data, null, 0);
+                    } catch (RemoteException e) {
+                    } catch (Exception e) {
+                        Log.i(TAG, "Someone wrote a bad service '" + service
+                                + "' that doesn't like to be poked: " + e);
+                    }
+                    data.recycle();
+                }
+            }
+            return null;
+        }
     }
 
     @Override

@@ -42,6 +42,11 @@
             android:title="@string/autoperf_title"
             android:summary="@string/autoperf_summary"
             android:defaultValue="true" />
+			
+		<SwitchPreference
+            android:key="dozey_doze"
+            android:title="@string/dozey_doze_title"
+            android:summary="@string/dozey_doze_summary" />
 
         <!-- Bar color -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
