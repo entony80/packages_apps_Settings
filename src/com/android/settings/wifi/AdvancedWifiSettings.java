@@ -184,8 +184,8 @@ public class AdvancedWifiSettings extends SettingsPreferenceFragment
 		mWpsPushPref.setEnabled(WifiManager.WIFI_STATE_ENABLED == wifiState);
 
         // WpsDialog: Create the dialog like WifiSettings does.
-        mWpsPushPref = findPreference(KEY_WPS_PIN);
-        mWpsPushPref.setOnPreferenceClickListener(new OnPreferenceClickListener(){
+        mWpsPinPref = findPreference(KEY_WPS_PIN);
+        mWpsPinPref.setOnPreferenceClickListener(new OnPreferenceClickListener(){
                 public boolean onPreferenceClick(Preference arg0) {
                     WpsFragment wpsFragment = new WpsFragment(WpsInfo.DISPLAY);
                     wpsFragment.show(getFragmentManager(), KEY_WPS_PIN);
