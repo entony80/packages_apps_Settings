@@ -149,7 +149,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         } else {
             int statusBarAmPm = CMSettings.System.getInt(resolver,
-                    CMSettings.System.STATUS_BAR_AM_PM, 2);
+                    CMSettings.System.STATUS_BAR_AM_PM, 1);
             mStatusBarAmPm.setValue(String.valueOf(statusBarAmPm));
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
