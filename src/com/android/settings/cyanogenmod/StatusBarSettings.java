@@ -189,7 +189,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBattery.setOnPreferenceChangeListener(this);
 
         int batteryShowPercent = CMSettings.System.getInt(resolver,
-                CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+                CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 5);
         mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
         mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
         enableStatusBarBatteryDependents(batteryStyle);
