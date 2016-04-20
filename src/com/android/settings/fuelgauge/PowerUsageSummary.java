@@ -43,6 +43,7 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
@@ -113,7 +114,7 @@ public class PowerUsageSummary extends PowerUsageBase
     private ListPreference mPerfProfilePref;
     private SwitchPreference mPerAppProfiles;
     private SwitchPreference mBatterySaverPref;
-	private SwitchPreference mDozeyDoze;
+	private SwitchPreference mDozePowersave;
     private boolean mDontPokeProperties;
 
     private String[] mPerfProfileEntries;
@@ -257,11 +258,11 @@ public class PowerUsageSummary extends PowerUsageBase
         BatteryEntry entry = pgp.getInfo();
         PowerUsageDetail.startBatteryDetailPage((SettingsActivity) getActivity(), mStatsHelper,
                 mStatsType, entry, true);
-		if (preference == mDozeyDoze) {
-            writeDozeyDozeOptions();
-	    } else {
-             return super.onPreferenceTreeClick(preferenceScreen, preference);
-		}
+	if (preference == mDozeyDoze) {
+            return writeDozeyDozeOptions();
+        } else {
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
+	}
     }
 
     @Override
