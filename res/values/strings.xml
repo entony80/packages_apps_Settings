@@ -6805,7 +6805,7 @@
     <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for charging only. -->
-    <string name="usb_use_charging_only">Charging</string>
+    <string name="usb_use_charging_only">Charge only</string>
     <!-- Decription of one of the choices in a dialog (with title defined in usb_use) that lets the
          user select what the USB connection for this device should be used for. This choice
          is for charging only. -->
@@ -6821,19 +6821,19 @@
     <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring files via MTP. -->
-    <string name="usb_use_file_transfers">File transfers</string>
+    <string name="usb_use_file_transfers">MTP</string>
     <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring files via MTP. -->
-    <string name="usb_use_file_transfers_desc">Transfer files to Windows or Mac (MTP)</string>
+    <string name="usb_use_file_transfers_desc">Transfer files to Windows or Mac</string>
     <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring photos via PTP. -->
-    <string name="usb_use_photo_transfers">Photo transfer (PTP)</string>
+    <string name="usb_use_photo_transfers">PTP</string>
     <!-- Description of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring photos via PTP. -->
-    <string name="usb_use_photo_transfers_desc">Transfer photos or files if MTP is not supported (PTP)</string>
+    <string name="usb_use_photo_transfers_desc">Transfer photos or files if MTP is not supported</string>
     <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for entering MIDI mode. -->

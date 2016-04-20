@@ -367,7 +367,7 @@
     <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
 
     <!-- Doze options -->
-    <string name="display_category_doze_options_title">Ambient display</string>
+    <string name="display_category_doze_options_title">Ambient &amp; gestures</string>
     <string name="doze_settings_title">Ambient settings</string>
     <string name="doze_timeout_title">Pulse timeout</string>
     <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
