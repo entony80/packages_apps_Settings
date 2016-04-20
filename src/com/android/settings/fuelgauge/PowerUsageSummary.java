@@ -151,7 +151,7 @@ public class PowerUsageSummary extends PowerUsageBase
         mPowerManager = (PowerManager)getSystemService(Context.POWER_SERVICE);
         mPerf = PerformanceManager.getInstance(getActivity());
 		
-		mDozePowersave = findAndInitSwitchPref(DOZEY_DOZE_KEY);
+		mDozePowersave = findAndInitSwitchPref(DOZE_POWERSAVE_KEY);
         updateDozeyDozeOptions();
 
         addPreferencesFromResource(R.xml.power_usage_summary);
@@ -257,7 +257,7 @@ public class PowerUsageSummary extends PowerUsageBase
         BatteryEntry entry = pgp.getInfo();
         PowerUsageDetail.startBatteryDetailPage((SettingsActivity) getActivity(), mStatsHelper,
                 mStatsType, entry, true);
-		} else if (preference == mDozeyDoze) {
+		if (preference == mDozeyDoze) {
             writeDozeyDozeOptions();
 	    } else {
              return super.onPreferenceTreeClick(preferenceScreen, preference);
