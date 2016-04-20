@@ -42,7 +42,6 @@ public class DisplayColor extends DialogPreference {
 
     private final Context mContext;
 	private final LiveDisplayManager mLiveDisplay;
-    private final LiveDisplayManager mLiveDisplay;
 	
     // These arrays must all match in length and order
     private static final int[] SEEKBAR_ID = new int[] {
