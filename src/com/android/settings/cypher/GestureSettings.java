@@ -85,8 +85,7 @@ public class GestureSettings extends SettingsPreferenceFragment
     public boolean onPreferenceChange(Preference preference, Object objValue) {
 		if (preference == mCameraDoubleTapPowerGesture) {
             boolean value = (Boolean) newValue;
-            Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
-                    value ? 0 : 1 /* Backwards because setting is for disabling */);
+            Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, !value);
             return true;
         }
         return false;
