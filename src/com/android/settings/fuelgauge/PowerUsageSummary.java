@@ -97,7 +97,7 @@ public class PowerUsageSummary extends PowerUsageBase
     private static final String KEY_PERF_PROFILE = "pref_perf_profile";
     private static final String KEY_PER_APP_PROFILES = "app_perf_profiles_enabled";
 	private static final String DOZEY_DOZE_PROPERTY = "persist.sys.doze_powersave";
-    private static final String DOZE_POWERSAVE_KEY = "dozey_doze";
+    private static final String DOZE_POWERSAVE_KEY = "doze_powersave";
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     private final ArrayList<SwitchPreference> mResetSwitchPrefs  = new ArrayList<SwitchPreference>();
 
