@@ -368,8 +368,8 @@
 
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Ambient display</string>
-    <string name="doze_settings_title">Advanced doze options</string>
-    <string name="doze_timeout_title">Doze pulse timeout</string>
+    <string name="doze_settings_title">Ambient settings</string>
+    <string name="doze_timeout_title">Pulse timeout</string>
     <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
     <string name="doze_trigger_pickup_title">Pick up gesture trigger</string>
     <string name="doze_trigger_pickup_summary_on">Doze pulse will be triggered by pick up gesture sensor events</string>
@@ -378,13 +378,13 @@
     <string name="doze_trigger_sigmotion_summary_on">Doze pulse will be triggered by significant motion sensor events</string>
     <string name="doze_trigger_sigmotion_summary_off">Significant motion sensor will not be utilized as a triggering mechanism</string>
     <string name="doze_trigger_notification_title">Notification trigger</string>
-    <string name="doze_trigger_notification_summary_on">Doze pulse will be triggered by notifications</string>
+    <string name="doze_trigger_notification_summary_on">Ambient display will be triggered by notifications</string>
     <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-    <string name="doze_schedule_title">Doze schedule</string>
-    <string name="doze_schedule_summary_on">Predefined doze repeat intervals (normally [1s,10s,30s,60s,120s]) will be used (default)</string>
-    <string name="doze_schedule_summary_off">Doze will only pulse once per notification</string>
-    <string name="doze_brightness_title">Doze brightness level</string>
-    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
+    <string name="doze_schedule_title">Schedule</string>
+    <string name="doze_schedule_summary_on">Predefined Ambient repeat intervals (normally [1s,10s,30s,60s,120s]) will be used (default)</string>
+    <string name="doze_schedule_summary_off">Ambient display will only pulse once per notification</string>
+    <string name="doze_brightness_title">Brightness level</string>
+    <string name="doze_brightness_summary">Brightness level of the Ambient display screen (% of max allowed brightness)</string>
 
     <!-- Doze notification color invert -->
     <string name="doze_notification_color_invert_title">Color inversion</string>
