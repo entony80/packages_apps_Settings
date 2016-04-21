@@ -27,6 +27,7 @@ import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
 import com.android.settings.cypher.widget.ActionPreference;
 import com.android.settings.cypher.widget.IconPickHelper;
+import com.android.settings.cypher.widget.ActionFragment;
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
