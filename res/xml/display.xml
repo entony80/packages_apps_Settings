@@ -37,6 +37,13 @@
                 android:summary="@string/live_display_summary"
                 android:fragment="com.android.settings.livedisplay.LiveDisplay" />
 				
+		<!-- Lockscreen Weather -->
+		<PreferenceScreen
+                android:key="lockscreen_weather"
+                android:title="@string/lock_screen_weather_settings_title"
+				android:summary="@string/lock_screen_weather_settings_title_summary"
+                android:fragment="com.android.settings.cypher.fragments.LockScreenWeatherSettings" />
+				
 		<!-- DPI chooser -->
         <ListPreference
                 android:key="lcd_density"
