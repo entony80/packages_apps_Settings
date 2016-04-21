@@ -35,7 +35,8 @@
             android:title="@string/status_bar_am_pm_title"
             android:dialogTitle="@string/status_bar_am_pm_title"
             android:entries="@array/status_bar_am_pm_entries"
-            android:entryValues="@array/status_bar_am_pm_values" />
+            android:entryValues="@array/status_bar_am_pm_values"
+            android:defaultValue="1" />
 
         <ListPreference
             android:key="status_bar_date"
@@ -73,7 +74,8 @@
             android:key="font_style"
             android:entries="@array/clock_font_style_entries"
             android:entryValues="@array/clock_font_style_values"
-            android:title="@string/clock_font_style_title" />
+            android:title="@string/clock_font_style_title"
+            android:defaultValue="2" />
 
         <ListPreference
             android:key="status_bar_clock_font_size"
@@ -102,7 +104,8 @@
             android:title="@string/status_bar_battery_style_title"
             android:dialogTitle="@string/status_bar_battery_style_title"
             android:entries="@array/status_bar_battery_style_entries"
-            android:entryValues="@array/status_bar_battery_style_values" />
+            android:entryValues="@array/status_bar_battery_style_values" 
+			android:defaultValue="5" />
 
         <ListPreference
             android:key="status_bar_show_battery_percent"
@@ -110,6 +113,11 @@
             android:dialogTitle="@string/status_bar_battery_percentage_title"
             android:entries="@array/status_bar_battery_percentage_entries"
             android:entryValues="@array/status_bar_battery_percentage_values" />
+			
+		<PreferenceScreen
+            android:key="carrierlabel"
+            android:fragment="com.android.settings.cypher.fragments.CarrierLabel"
+            android:title="@string/carrier_options" />
 
         <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
             android:key="status_bar_brightness_control"
