@@ -152,13 +152,13 @@ public class PowerUsageSummary extends PowerUsageBase
         mPowerManager = (PowerManager)getSystemService(Context.POWER_SERVICE);
         mPerf = PerformanceManager.getInstance(getActivity());
 		
-		mDozePowersave = findAndInitSwitchPref(DOZE_POWERSAVE_KEY);
-        updateDozeyDozeOptions();
-
         addPreferencesFromResource(R.xml.power_usage_summary);
         mHistPref = (BatteryHistoryPreference) findPreference(KEY_BATTERY_HISTORY);
         mAppListGroup = (PreferenceGroup) findPreference(KEY_APP_LIST);
         mBatterySaverPref = (SwitchPreference) findPreference(KEY_BATTERY_SAVER);
+		
+		mDozePowersave = findAndInitSwitchPref(DOZE_POWERSAVE_KEY);
+        updateDozeyDozeOptions();
 
         mNumPerfProfiles = mPerf.getNumberOfProfiles();
         mPerfProfilePref = (ListPreference) findPreference(KEY_PERF_PROFILE);
