@@ -657,9 +657,9 @@
     <!-- Security settings screen, setting option summary to change screen timeout, with additional explanation-->
     <string name="lock_after_timeout_summary_with_exception"><xliff:g id="timeout_string">%1$s</xliff:g> after sleep, except when kept unlocked by <xliff:g id="trust_agent_name">%2$s</xliff:g></string>
     <!-- Text shown next to checkbox for showing owner info on LockScreen [CHAR LIMIT=50]-->
-    <string name="show_owner_info_on_lockscreen_label">Show owner info on lock screen</string>
+    <string name="show_owner_info_on_lockscreen_label">Show owner info on lockscreen</string>
     <!-- Text shown for title of owner info setting [CHAR LIMIT=20]-->
-    <string name="owner_info_settings_title">Lock screen message</string>
+    <string name="owner_info_settings_title">Message</string>
     <!-- Text shown for title of settings checkbox to enable widgets [CHAR LIMIT=20]-->
     <string name="security_enable_widgets_title">Enable widgets</string>
     <!-- Summary for settings checkbox to disable widgets when the setting has been disabled by an installed device admin [CHAR LIMIT=50] -->
@@ -673,7 +673,7 @@
     <!-- Text shown for title of user info setting [CHAR LIMIT=20]-->
     <string name="user_info_settings_title">User info</string>
     <!-- Text shown next to checkbox for showing profile info on LockScreen [CHAR LIMIT=50]-->
-    <string name="show_profile_info_on_lockscreen_label">Show profile info on lock screen</string>
+    <string name="show_profile_info_on_lockscreen_label">Show profile info on lockscreen</string>
     <!-- Text shown for title of profile info setting [CHAR LIMIT=20]-->
     <string name="profile_info_settings_title">Profile info</string>
     <!-- Main Settings screen setting option title for the item to take you to the Accounts screen [CHAR LIMIT=22] -->
@@ -847,9 +847,9 @@
     <string name="crypt_keeper_unplugged_text">Plug in your charger and try again.</string>
 
     <!-- Dialog title, shown when encryption cannot proceed because a PIN/Password is needed -->
-    <string name="crypt_keeper_dialog_need_password_title">No lock screen PIN or password</string>
+    <string name="crypt_keeper_dialog_need_password_title">No lockscreen PIN or password</string>
     <!-- Dialog message, shown when encryption cannot proceed because a PIN/Password is needed -->
-    <string name="crypt_keeper_dialog_need_password_message">You need to set a lock screen PIN or
+    <string name="crypt_keeper_dialog_need_password_message">You need to set a lockscreen PIN or
     password before you can start encryption.</string>
 
     <!-- Title of the final confirmation screen before starting device encryption -->
@@ -951,7 +951,7 @@
     <string name="unlock_set_unlock_launch_picker_title">Screen lock</string>
 
     <!--  Title for PreferenceScreen to change security method: None/Pattern/PIN/Password [CHAR LIMIT=22] -->
-    <string name="unlock_set_unlock_launch_picker_change_title">Change lock screen</string>
+    <string name="unlock_set_unlock_launch_picker_change_title">Change lockscreen</string>
 
     <!--  Summary for PreferenceScreen to changeecurity method: None/Pattern/PIN/Password [CHAR LIMIT=45]  -->
     <string name="unlock_set_unlock_launch_picker_change_summary">Change or disable pattern, PIN, or password security</string>

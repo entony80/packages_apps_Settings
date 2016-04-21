@@ -191,10 +191,10 @@
 
     <!-- Profiles - system settings -->
     <string name="profile_system_settings_title">System settings</string>
-    <string name="profile_lockmode_title">Lock screen mode</string>
+    <string name="profile_lockmode_title">Lockscreen mode</string>
     <string name="profile_lockmode_policy_disabled_summary">This profile option is disabled by a device administrator policy</string>
     <string name="profile_lockmode_insecure_summary">Don\'t ask for PIN or password</string>
-    <string name="profile_lockmode_disabled_summary">Disable lock screen</string>
+    <string name="profile_lockmode_disabled_summary">Disable lockscreen</string>
     <string name="profile_airplanemode_title">Airplane mode</string>
 
     <string name="profile_brightness_title">Screen brightness</string>
@@ -647,7 +647,7 @@
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_disabled">Disabled</string>
     <string name="display_rotation_unit">degrees</string>
-    <string name="display_lockscreen_rotation_title">Rotate lock screen</string>
+    <string name="display_lockscreen_rotation_title">Rotate lockscreen</string>
     <string name="display_rotation_category_title">Rotation modes</string>
     <string name="display_rotation_0_title">0 degrees</string>
     <string name="display_rotation_90_title">90 degrees</string>
@@ -891,7 +891,7 @@
     <!-- lock screen disabled by QS tile warning -->
     <string name="lockscreen_disabled_by_qs_tile_title">Disabled by quick settings tile</string>
     <string name="lockscreen_disabled_by_qs_tile_summary">Tap to enable the lock screen</string>
-    <string name="lockscreen_disabled_by_qs_tile_summary_enabled">Lock screen enabled!</string>
+    <string name="lockscreen_disabled_by_qs_tile_summary_enabled">Lockscreen enabled!</string>
 
     <!-- Battery saver -->
     <string name="battery_saver_threshold">Battery saver threshold</string>
@@ -1117,13 +1117,13 @@
 
     <!-- Live lock screen -->
     <!-- Live lock screen title -->
-    <string name="live_lock_screen_title">Live lock screen</string>
+    <string name="live_lock_screen_title">Live lockscreen</string>
     <!-- Live lock screen summary -->
-    <string name="live_lock_screen_summary">Enable and configure live lock screens</string>
+    <string name="live_lock_screen_summary">Enable and configure live lockscreens</string>
     <!-- Live lock screen settings content description -->
     <string name="live_lock_screen_settings_button">Settings</string>
     <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
-    <string name="live_lock_screen_settings_disabled_prompt">To view available Live lock screens, turn Live lock screens on.</string>
+    <string name="live_lock_screen_settings_disabled_prompt">To view available Live lockscreens, turn Live lockscreens on.</string>
 
     <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
     <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
