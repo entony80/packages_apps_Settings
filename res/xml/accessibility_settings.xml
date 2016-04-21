@@ -32,12 +32,6 @@
                 android:title="@string/button_pref_title"
                 android:fragment="com.android.settings.ButtonSettings"
                 />
-				
-		<Preference
-                android:key="wakelock_blocker"
-                android:title="@string/wakelock_blocker_title"
-				android:summary="@string/wakelock_blocker_summary"
-                android:fragment="com.android.settings.cypher.fragments.WakelockBlocker" />
 
         <PreferenceScreen
             android:fragment="com.android.settings.accessibility.CaptionPropertiesFragment"
