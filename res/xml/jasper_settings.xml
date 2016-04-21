@@ -55,11 +55,10 @@
 				
 		<!-- Navigation settings -->		
 		<PreferenceScreen
-		        android:title="@string/navigation_settings_title"
-				android:key="navigation_settings_key"
-				android:summary="@string/navigation_settings_title_summary"
-				android:fragment="com.android.settings.cypher.NavigationSettings"
-				/>
+                android:key="navbar"
+                android:fragment="com.android.settings.cypher.fragments.Navbar"
+                android:title="@string/navigation_settings_title"
+                android:summary="@string/navigation_settings_title_summary" />
 				
 		<!-- PiControls -->
 		<PreferenceScreen

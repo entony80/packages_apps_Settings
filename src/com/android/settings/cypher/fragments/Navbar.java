@@ -1,6 +1,6 @@
 /*
 
- * Copyright (C) 2014 Screw'd Android
+ * Copyright (C) 2016 CypherOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -89,7 +89,7 @@ public class Navbar extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.aicp_navbar_settings);
+        addPreferencesFromResource(R.xml.navigation_settings);
 		
 		Activity activity = getActivity();
 		
