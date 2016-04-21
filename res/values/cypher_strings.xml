@@ -821,4 +821,11 @@
     <string name="colors_title">Colors</string>
     <string name="text_title">Text</string>
 
+	<!-- Status bar temperature -->
+    <string name="status_bar_temperature_title">Temperature</string>
+	<string name="status_bar_temperature_title_summary">Show your local temperature in the statusbar</string>
+    <string name="status_bar_temperature_hidden">Hidden</string>
+    <string name="status_bar_temperature_show_scale">Scale</string>
+    <string name="status_bar_temperature_hide_scale">No scale</string>
+ 
 </resources>

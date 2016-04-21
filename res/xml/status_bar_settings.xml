@@ -98,6 +98,12 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.TunerActivity$StatusBarIconActivity" />
         </PreferenceScreen>
+		
+		<PreferenceScreen
+            android:key="status_bar_temperature_style"
+            android:title="@string/status_bar_temperature_title"
+			android:summary="@strig/status_bar_temperature_title_summary"
+            android:fragment="com.android.settings.cypher.fragments.StatusBarWeather" />
 
         <ListPreference
             android:key="status_bar_battery_style"
