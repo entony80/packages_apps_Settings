@@ -152,7 +152,7 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.AICPEXTRAS;
+        return MetricsLogger.GET_VOLUME_STEPS;
     }
 
 
