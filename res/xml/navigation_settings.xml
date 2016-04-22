@@ -18,28 +18,25 @@
     <SwitchPreference
         android:key="navbar_visibility"
         android:title="@string/navbar_visibility" />
-
-    <PreferenceCategory
-        android:key="category_navbar_interface"
-        android:title="@string/navbar_interface_title" >
-
+		
         <ListPreference
             android:entries="@array/systemui_navbar_mode_entries"
             android:entryValues="@array/systemui_navbar_mode_values"
             android:key="navbar_mode"
-            android:title="@string/navbar_mode" />
+            android:title="@string/navbar_mode"
+            android:summary="@string/navbar_mode_title_summary" />
 
         <PreferenceScreen
             android:key="smartbar_settings"
             android:title="@string/smartbar_settings_title"
+			android:summary="@string/smartbar_settings_title_summary"
             android:fragment="com.android.settings.cypher.fragments.SmartbarSettings" />
 
         <PreferenceScreen
             android:key="fling_settings"
             android:title="@string/fling_settings"
+			android:summary="@string/fling_settings_title_summary"
             android:fragment="com.android.settings.cypher.fragments.FlingSettings" />
-
-    </PreferenceCategory>
     
     <PreferenceCategory
         android:key="category_navbar_general"
@@ -48,12 +45,14 @@
 	 <PreferenceScreen
             android:key="pulse_settings"
             android:title="@string/pulse_settings"
+			android:summary="@string/pulse_settings_title_summary"
             android:fragment="com.android.settings.cypher.fragments.PulseSettings" />   
 	    
 
     <com.android.settings.cypher.widget.NavbarSizePreference
             android:key="navigation_bar_size"
-            android:title="@string/navigation_bar_size_title" />
+            android:title="@string/navigation_bar_size_title"
+            android:summary="@string/navigation_bar_size_title_summary" />
 
     </PreferenceCategory>
 

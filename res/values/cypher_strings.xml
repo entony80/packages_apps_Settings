@@ -369,6 +369,7 @@
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Ambient &amp; gestures</string>
     <string name="doze_settings_title">Ambient settings</string>
+	<string name="doze_settings_title_adv_summary">Additional options for Ambient display</string>
     <string name="doze_timeout_title">Pulse timeout</string>
     <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
     <string name="doze_trigger_pickup_title">Pick up gesture trigger</string>
@@ -616,6 +617,7 @@
     <string name="navbar_interface_title">Interface</string>
     <string name="navbar_size">Bar size</string>
     <string name="navbar_mode">Navigation mode</string>
+	<string name="navbar_mode_title_summary">Change the productivity and usability of your navigation bar</string>
     <string name="navbar_visibility">Enable navigation bar</string>
     <string name="navigationbar_settings_title">Navigation</string>
     <string name="aosp_navigation_bar">Navigation bar</string>
@@ -648,7 +650,8 @@
 
     <!-- Fling -->
     <string name="fling_settings">Fling settings</string>
-    <string name="fling_interface">Fling gesture interface</string>
+	<string name="fling_settings_title_summary">Modify the functionality of fling from looks to performance</string>
+    <string name="fling_interface">Fling</string>
     <string name="fling_enable_title">Enable Fling</string>
     <string name="fling_back_home_policy">Back and Home are required to be set at all times. To change a Back or Home assignment, set the desired assignment first</string>
     <string name="fling_split_bar_policy">When only a right or left action is assigned, the action applies to the full bar</string>
@@ -698,6 +701,7 @@
     <string name="pulse_help_policy_notice_title">About Pulse</string>
     <string name="pulse_help_policy_notice_summary">Pulse is brilliant equalizer bar style audio visualization on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
     <string name="pulse_settings">Pulse</string>
+	<string name="pulse_settings_title_summary">Bring your navigation bar to life with equalization</string>
     <string name="pulse_settings_summary">Navigation bar audio visualization</string>
     <string name="fling_show_pulse_title">Show Pulse</string>
     <string name="fling_show_pulse_summary">Audio visualization on the navigation bar</string>
@@ -716,6 +720,7 @@
     <!-- SmartBar -->
     <string name="smartbar_category">Smartbar</string>
     <string name="smartbar_settings_title">Smartbar settings</string>
+	<string name="smartbar_settings_title_summary">Make your navigation bar a little smarter with these useful options</string>
     <string name="smartbar_editor_title">Toggle button editor</string>
     <string name="smartbar_editor_summary">Medium press and drag to change position. Long press to show edit menu. Button position may be changed while menu is showing.</string>
     <string name="smartbar_context_menu_position_title">Context buttons layout position</string>
@@ -786,6 +791,7 @@
 	
 	<!-- Show carrier label and custom -->
     <string name="carrier_options">Carrier Label</string>
+	<string name="carrier_options_summary">Change your carrier name to anything you please</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>

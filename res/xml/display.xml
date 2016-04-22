@@ -115,6 +115,7 @@
                 android:fragment="com.android.settings.slim.fragments.DozeSettingsFragment"
                 android:key="advanced_doze_options"
                 android:title="@string/doze_settings_title"
+				android:summary="@string/doze_settings_title_adv_summary"
                 android:dependency="doze" />
 				
 		<PreferenceScreen
