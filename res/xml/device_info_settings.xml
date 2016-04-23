@@ -29,6 +29,12 @@
 		        android:targetPackage="com.cypher.updates"
 			android:targetClass="com.cypher.updates.activities.MainActivity" />
         </PreferenceScreen>
+		
+		<!-- Device information -->
+		<PreferenceScreen
+		        android:title="@string/info_settings_title"
+				android:key="info_settings"
+				android:fragment="com.android.settings.cypher.Information" />
 
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"

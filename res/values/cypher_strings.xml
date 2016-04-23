@@ -855,4 +855,22 @@
     <string name="force_headsup_title">Force heads up</string>
     <string name="force_headsup_summary">Force heads up in all applications</string>
 	
+	<!-- Device information -->
+	<string name="info_settings_title">Device information</string>
+	<string name="buildnotes_settings_title">Build notes</string>
+	<string name="buildnotes_settings_title_summary">View the latest changes and updates within CypherOS</string>
+	<string name="team_settings_title">The team</string>
+	<string name="team_settings_title_summary">Take a look at who has been responsible for giving you the best ROM on the market</string>
+	<string name="team_settings_sirhc">Chris</string>
+	<string name="team_settings_sirhc_pos">Lead Developer &amp; Founder</string>
+	<string name="team_settings_sirhc_pos_summary">Chris is the founder of CypherOS. The man with the plan to give you whats best</string>
+	<string name="team_settings_aaron">Aaron</string>
+	<string name="team_settings_aaron_pos">Developer</string>
+	<string name="team_settings_aaron_pos_summary">Aaron takes a big part in CypherOS. Without his expertise things would be a bummer</string>
+	<string name="team_settings_brady">Brady</string>
+	<string name="team_settings_brady_pos">Developer</string>
+	<string name="team_settings_brady_pos_summary">Brady is the ambitious one. Always coming up with ideas to help cypher grow. Interesting fella</string>
+	<string name="team_settings_mani">Mani</string>
+	<string name="team_settings_mani_pos">Manager</string>
+	<string name="team_settings_mani_pos_summary">Mani may not be a developer but he plays a big role in maximising our brand and moving us forward</string>
 </resources>
