@@ -81,7 +81,6 @@ public class Navbar extends SettingsPreferenceFragment implements
     private SwitchPreference mNavbarVisibility;
     private ListPreference mNavbarMode;
     private PreferenceScreen mFlingSettings;
-    private PreferenceCategory mNavInterface;
     private PreferenceCategory mNavGeneral;
     private PreferenceScreen mSmartbarSettings;
 
@@ -96,7 +95,6 @@ public class Navbar extends SettingsPreferenceFragment implements
 		ContentResolver resolver = getActivity().getContentResolver();
 		PreferenceScreen prefSet = getPreferenceScreen();
 		
-		mNavInterface = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_INTERFACE);
         mNavGeneral = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_GENERAL);
         mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
         mNavbarMode = (ListPreference) findPreference(KEY_NAVBAR_MODE);
@@ -134,7 +132,6 @@ public class Navbar extends SettingsPreferenceFragment implements
 
     private void updateBarVisibleAndUpdatePrefs(boolean showing) {
         mNavbarVisibility.setChecked(showing);
-        mNavInterface.setEnabled(mNavbarVisibility.isChecked());
         mNavGeneral.setEnabled(mNavbarVisibility.isChecked());
     }
 
