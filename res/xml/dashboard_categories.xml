@@ -115,12 +115,12 @@
                 android:icon="@drawable/ic_settings_notifications"
                 />
 				
-		<!-- Visual -->
+		<!-- Additions -->
 		<dashboard-tile
-		        android:id="@+id/jasper_settings"
-				android:title="@string/jasper_settings_title"
-				android:fragment="com.android.settings.cypher.JasperSettings"
-				android:icon="@drawable/ic_settings_jasper"
+		        android:id="@+id/addition_settings"
+				android:title="@string/addition_settings_title"
+				android:fragment="com.android.settings.cypher.AdditionSettings"
+				android:icon="@drawable/ic_settings_addition"
 				/>
 
         <!-- Lockscreen -->

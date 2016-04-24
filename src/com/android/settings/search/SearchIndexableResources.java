@@ -58,7 +58,7 @@ import com.android.settings.wifi.WifiSettings;
 
 import com.android.settings.ButtonSettings;
 import com.android.settings.cyanogenmod.StatusBarSettings;
-import com.android.settings.cypher.JasperSettings;
+import com.android.settings.cypher.AdditionSettings;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -316,12 +316,12 @@ public final class SearchIndexableResources {
                         WifiCallingSettings.class.getName(),
                         R.drawable.ic_settings_wireless));
 						
-		sResMap.put(JasperSettings.class.getName(),
+		sResMap.put(AdditionSettings.class.getName(),
                 new SearchIndexableResource(
-                        Ranking.getRankForClassName(JasperSettings.class.getName()),
-                        R.xml.jasper_settings,
-                        JasperSettings.class.getName(),
-                        R.drawable.ic_settings_jasper));
+                        Ranking.getRankForClassName(AdditionSettings.class.getName()),
+                        R.xml.addition_settings,
+                        AdditionSettings.class.getName(),
+                        R.drawable.ic_settings_addition));
 
         // CyanogenMod Settings
         sResMap.put(ButtonSettings.class.getName(),

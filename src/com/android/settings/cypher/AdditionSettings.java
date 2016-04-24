@@ -27,10 +27,10 @@ import android.provider.Settings;
 
 import com.android.internal.logging.MetricsLogger;
 
-public class JasperSettings extends SettingsPreferenceFragment implements
+public class AdditionSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "JasperSettings";
+    private static final String TAG = "AdditionSettings";
 
     @Override
     protected int getMetricsCategory() {
@@ -40,7 +40,7 @@ public class JasperSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.jasper_settings);
+        addPreferencesFromResource(R.xml.addition_settings);
     }
 
     @Override
