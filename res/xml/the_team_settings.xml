@@ -32,7 +32,7 @@
 			
 		<PreferenceCategory
             android:key="aaron_pos_cat"
-            android:title="@string/team_settings_aaron">
+            android:title="@string/team_settings_aaron" />
 		
 		<Preference
             style="?android:preferenceInformationStyle"
@@ -43,7 +43,7 @@
 			
 		<PreferenceCategory
             android:key="brady_pos_cat"
-            android:title="@string/team_settings_brady">
+            android:title="@string/team_settings_brady" />
 		
 		<Preference
             style="?android:preferenceInformationStyle"
@@ -54,7 +54,7 @@
 			
 		<PreferenceCategory
             android:key="mani_pos_cat"
-            android:title="@string/team_settings_mani">
+            android:title="@string/team_settings_mani" />
 		
 		<Preference
             style="?android:preferenceInformationStyle"
