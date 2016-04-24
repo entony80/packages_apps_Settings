@@ -19,18 +19,6 @@
         android:title="@string/jasper_settings_title"
         android:key="visual_settings">
 		
-		<!-- Themes -->
-        <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
-        <PreferenceScreen
-                android:id="@+id/theme_settings"
-                android:title="@string/themes_settings_title"
-                android:summary="@string/themes_settings_title_summary">
-            <intent
-                    android:action="android.intent.action.MAIN" >
-                <categories android:name="cyanogenmod.intent.category.APP_THEMES" />
-            </intent>
-        </PreferenceScreen>
-		
 		<!-- App Circle Bar -->
 		<PreferenceScreen
 		        android:title="@string/app_circle_bar_title"
