@@ -859,6 +859,7 @@
 	<string name="info_settings_title">Device information</string>
 	<string name="buildnotes_settings_title">Build notes</string>
 	<string name="buildnotes_settings_title_summary">View the latest changes and updates within CypherOS</string>
+	<string name="build_notes_cypher_error">Cannot load Build Notes</string>
 	<string name="team_settings_title">The team</string>
 	<string name="team_settings_title_summary">Take a look at who has been responsible for giving you the best ROM on the market</string>
 	<string name="team_settings_sirhc">Chris</string>
