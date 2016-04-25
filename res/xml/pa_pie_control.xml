@@ -26,14 +26,14 @@
     <PreferenceScreen
         android:key="pa_pie_targets"
         android:title="@string/pa_pie_targets_title"
-		android:title="@string/pa_pie_targets_title_summary"
+	android:summary="@string/pa_pie_targets_title_summary"
         android:fragment="com.android.settings.cypher.fragments.PieTargets"
         android:dependency="pa_pie_state" />
 
     <PreferenceScreen
         android:key="pa_pie_color"
         android:title="@string/pa_pie_color_title"
-		android:title="@string/pa_pie_color_title_summary"
+	android:summary="@string/pa_pie_color_title_summary"
         android:fragment="com.android.settings.cypher.fragments.PieColor"
         android:dependency="pa_pie_state" />
 

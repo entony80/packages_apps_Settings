@@ -28,7 +28,7 @@
     <PreferenceScreen
             android:key="zen_mode"
             android:title="@string/zen_mode_settings_title"
-			android:summary="@string/zen_mode_settings_title_summary"
+	    android:summary="@string/zen_mode_settings_title_summary"
             settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
             android:fragment="com.android.settings.notification.ZenModeSettings" />
 
@@ -42,7 +42,7 @@
     <PreferenceScreen
             android:key="app_notifications"
             android:title="@string/app_notifications_title"
-			android:title="@string/app_notifications_title_summary"
+            android:summary="@string/app_notifications_title_summary"
             android:fragment="com.android.settings.applications.ManageApplications">
             <extra
                 android:name="classname"
@@ -59,7 +59,7 @@
         <PreferenceScreen
                 android:key="notification_light"
                 android:title="@string/notification_light_title"
-				android:summary="@string/notification_light_title_summary"
+		android:summary="@string/notification_light_title_summary"
                 android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
 
 </PreferenceScreen>
