@@ -86,6 +86,7 @@
     <color name="fab_ripple">#1fffffff</color><!-- 12% white -->
     <color name="fab_shape">?android:attr/colorAccent</color>
     <color name="voice_interaction_highlight">#33b5e5</color>
+	<color name="gesture_button">#009688</color>
 
     <drawable name="fp_enrollment_header_landscape">#009688</drawable>
 

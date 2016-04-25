@@ -40,7 +40,8 @@
         style="@android:style/ButtonBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+		android:visibility="gone">
 
         <Button
             android:id="@+id/addButton"
@@ -49,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:enabled="false"
-            android:text="@string/ga_button_add" />
+            android:text="@string/ga_button_add"
+            android:textColor="@color/gesture_button" />
 
         <Button
             android:id="@+id/reloadButton"
@@ -58,7 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:enabled="false"
-            android:text="@string/ga_button_reload" />
+            android:text="@string/ga_button_reload"
+            android:textColor="@color/gesture_button" />
 
     </LinearLayout>
 
