@@ -193,7 +193,6 @@
         <dashboard-tile
                 android:id="@+id/theme_settings"
                 android:title="@string/themes_settings_title"
-                android:summary="@string/themes_settings_title_summary"
 				android:icon="@drawable/ic_settings_themes">
             <intent
                     android:action="android.intent.action.MAIN" >
