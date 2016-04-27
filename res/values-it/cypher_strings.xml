@@ -745,4 +745,122 @@
     <string name="doze_wakeup_doubletap_title">Doppio Tocco per attivare</string>
     <string name="doze_wakeup_doubletap_summary_on">Richiede un doppio tocco sullo schermo per riattivare il dispositivo  di un impulso di dosi</string>
     <string name="doze_wakeup_doubletap_summary_off">Richiede un semplice tocco sullo schermo per attivare il dispositivo (Predefinito)</string>
+
+<!-- CMActions -->
+	<string name="cm_gesture_title">Gesti di movimento</string>
+	<string name="cm_gesture_title_summary">Interagisci con il tuo dispositivo con degli eventi di movimento della mano</string>
+	
+	<!-- Recents panel settings -->
+	<string name="recents_panel_title">Recenti</string>
+	<string name="recents_panel_title_summary">Passare il pannello recenti con diversi elementi di produttività</string>
+	<string name="recents_panel_settings">Impostazioni</string>
+	
+	<!-- Search in recents -->
+	<string name="recents_show_searchbar">Cerca nel</string>
+	<string name="recents_show_searchbar_summary">Mostra la barra di ricerca di sistema di default nel pannello recenti</string>
+	
+	<!-- Show clear all recents button -->
+	<string name="show_clear_all_recents_button_title">Pulsante cancella tutto</string>
+	<string name="show_clear_all_recents_button_summary">Cancella tutte le schede del pannello recenti con la semplice pressione di un tasto</string>
+	
+	<!-- Clear all recents location -->
+	<string name="recents_clear_all_location_title">Posizione pulsante</string>
+	<string name="recents_clear_all_location_bottom_right">In basso a destra</string>
+	<string name="recents_clear_all_location_bottom_left">In basso a sinistra</string>
+	
+	
+	<!-- RAM Indicator -->
+	<string name="recents_show_membar_title">Indicatore RAM</string>
+	<string name="recents_show_membar_summary_on">L\'indicatore della memoria RAM verrà visualizzato nel pannello recenti</string>
+	<string name="recents_show_membar_summary_off">L\'indicatore della memoria RAM non sarà visualizzato nel pannello recenti</string>
+	
+	<!-- Dozey Doze -->
+    <string name="dozey_doze_title">Dozey Doze</string>
+    <string name="dozey_doze_summary">Consente al dispositivo di entrare uno stato di alimentazione a bassissimo consumo durante il sonno</string>
+	
+	<!-- Show carrier label and custom -->
+    <string name="carrier_options">Etichetta</string>
+    <string name="carrier_options_summary">Modificare il nome del vettore con qualsiasi altra cosa per favore</string>
+    <string name="custom_carrier_label_title">Etichetta personalizzata</string>
+    <string name="custom_carrier_label_explain">Si prega di inserire una nuova etichetta. Lasciare vuoto per tornare come predefinito.</string>
+    <string name="custom_carrier_label_notset">Nessuna etichetta personalizzata al momento è impostata</string>
+    <string name="status_bar_carrier_color">Colore</string>
+    <string name="show_carrier_title">Etichetta</string>
+    <string name="show_carrier_disabled">Nascosta</string>
+    <string name="show_carrier_keyguard">Blocca schermo</string>
+    <string name="show_carrier_statusbar">Barra di stato</string>
+    <string name="show_carrier_enabled">Entrambi</string>
+	
+    <!-- Lockscreen Weather -->
+    <string name="lock_screen_weather_settings_title">Meteo nella schermata di blocco</string>
+    <string name="lock_screen_weather_settings_title_summary">Visualizza le informazioni del meteo locali direttamente nella tua scheramta di blocco con una bella visualizzazione</string>
+    <string name="weather_show_weather_title">Visualizza Meteo</string>
+    <string name="weather_show_weather_summary">Attiva per mostrare le informazioni meteo</string>
+    <string name="weather_show_location_title">Mostra localizzazione</string>
+    <string name="weather_show_location_summary">Attiva per mostrare la posizione</string>
+    <string name="weather_show_timestamp_title">Mostra timestamp</string>
+    <string name="weather_show_timestamp_summary">Abilitare per mostrare il timestamp</string>
+    <string name="weather_condition_icon_title">Icona condizione</string>
+    <string name="weather_condition_icon_dlg_title">Scegliere un\'icona per visualizzare le condizioni meteo</string>
+    <string name="weather_condition_icon_monochrome_title">Monocromo</string>
+    <string name="weather_condition_icon_colored_title">Colorato</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="weather_colorize_all_icons_title">Colora tutte le icone</string>
+    <string name="weather_colorize_all_icons_summary">Attiva per colorare tutte le icone, disabilitare per colorare solo le icone monocromatiche</string>
+    <string name="icons_title">Icone</string>
+    <string name="position_right_title">Destra</string>
+    <string name="position_centered_title">Centrato</string>
+    <string name="hidden_title">Nascosto</string>
+    <string name="dlg_reset_values_message">Ripristino dei valori come predefinito?</string>
+    <string name="dlg_reset_android">Ok</string>
+    <string name="colors_title">Colori</string>
+    <string name="text_title">Testo</string>
+
+    <!-- Status bar temperature -->
+    <string name="status_bar_temperature_title">Temperatura</string>
+    <string name="status_bar_temperature_title_summary">Visualizza la temperatura locale nella barra di stato</string>
+    <string name="status_bar_temperature_hidden">Nascosto</string>
+    <string name="status_bar_temperature_show_scale">Indicato con la scala</string>
+    <string name="status_bar_temperature_hide_scale">Indicato senza scala</string>
+    <string name="status_bar_temperature_location_title">Posizione</string>
+    <string name="status_bar_temperature_location_summary">Selezionare dove la temperatura del tempo verrà visualizzata nella barra di stato</string>
+    <string name="status_bar_temperature_location_right">Mostra a destra</string>
+    <string name="status_bar_temperature_location_left">Mostra a sinistra</string>
+    <string name="status_bar_weather_color_title">Colore Temperatura</string>
+    <string name="status_bar_weather_size_title">Dimensione del carattere</string>
+	
+	<!-- Heads Up Snooze -->
+    <string name="heads_up_snooze">Snooze</string>
+    <string name="heads_up_snooze_disabled_summary">Il timer Snooze è disattivato</string>
+    <string name="heads_up_snooze_summary">Strisciando verso l\'alto sulla notifica heads up sarà disattivata da quell\'App per <xliff:g id="number">%d</xliff:g> minuti</string>
+    <string name="heads_up_snooze_1min">1 minuto</string>
+    <string name="heads_up_snooze_5min">5 minuti</string>
+    <string name="heads_up_snooze_10min">10 minuti</string>
+    <string name="heads_up_snooze_15min">15 minuti</string>
+    <string name="heads_up_snooze_20min">20 minuti</string>
+    <string name="heads_up_snooze_30min">30 minuti</string>
+    <string name="heads_up_snooze_45min">45 minuti</string>
+    <string name="heads_up_snooze_60min">60 minuti</string>
+    <string name="force_headsup_title">Forza heads up</string>
+    <string name="force_headsup_summary">Forza heads up in tutte le applicazioni</string>
+	
+	<!-- Device information -->
+	<string name="info_settings_title">Informazioni sul dispositivo</string>
+	<string name="buildnotes_settings_title">Build note</string>
+	<string name="buildnotes_settings_title_summary">Visualizza le ultime modifiche e aggiornamenti della CypherOS</string>
+	<string name="build_notes_cypher_error">Impossibile caricare Build Note</string>
+	<string name="team_settings_title">La squadra</string>
+	<string name="team_settings_title_summary">Date uno sguardo al responsabile della miglior ROM sul mercato</string>
+	<string name="team_settings_sirhc">Chris</string>
+	<string name="team_settings_sirhc_pos">Sviluppatore &amp; Fondatore</string>
+	<string name="team_settings_sirhc_pos_summary">Chris è il fondatore di CypherOS. L\'uomo con il piano per darvi cosa è meglio</string>
+	<string name="team_settings_aaron">Aaron</string>
+	<string name="team_settings_aaron_pos">Sviluppatore</string>
+	<string name="team_settings_aaron_pos_summary">Aaron ha un ruolo importante in CypherOS. Senza le sue competenze sarebbe una rottura</string>
+	<string name="team_settings_brady">Brady</string>
+	<string name="team_settings_brady_pos">Sviluppatore</string>
+	<string name="team_settings_brady_pos_summary">Brady è ambizioso. Viene sempre con idee per far crescere cypher. Fella interessante</string>
+	<string name="team_settings_mani">Mani</string>
+	<string name="team_settings_mani_pos">Manager</string>
+	<string name="team_settings_mani_pos_summary">Mani non può essere uno sviluppatore ma gioca un ruolo importante nel massimizzare il nostro marchio e ci si muove in avanti</string>
 </resources>
