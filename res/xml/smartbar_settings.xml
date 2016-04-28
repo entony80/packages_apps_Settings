@@ -35,7 +35,8 @@
         android:title="@string/smartbar_ime_action_title"
         android:entries="@array/smartbar_ime_action_entries"
         android:entryValues="@array/smartbar_ime_action_values"
-        android:summary="@string/smartbar_ime_action_summary" />
+        android:summary="@string/smartbar_ime_action_summary"
+        android:defaultValue="0" />
 
     <ListPreference
         android:key="smartbar_button_animation"
