@@ -117,12 +117,6 @@
                 android:title="@string/doze_settings_title"
 				android:summary="@string/doze_settings_title_adv_summary"
                 android:dependency="doze" />
-				
-		<PreferenceScreen
-		        android:fragment="com.android.settings.cypher.GestureSettings"
-				android:key="gesture_settings_key"
-				android:title="@string/gesture_settings_cypher_title"
-				android:summary="@string/gesture_settings_cypher_title_summary" />
 
     </PreferenceCategory>
 

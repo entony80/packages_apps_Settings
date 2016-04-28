@@ -207,6 +207,12 @@
                 android:fragment="com.android.settings.applications.ManageApplications"
                 android:icon="@drawable/ic_settings_applications"
                 />
+				
+		<dashboard-tile
+		        android:fragment="com.android.settings.cypher.GestureSettings"
+				android:key="gesture_settings_key"
+				android:title="@string/gesture_settings_cypher_title"
+                android:icon="@drawable/ic_settings_gestures" />
 
         <!-- Account -->
         <dashboard-tile
