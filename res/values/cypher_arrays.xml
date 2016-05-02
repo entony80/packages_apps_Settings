@@ -688,8 +688,10 @@
 	
 	<!-- clear all recents button location -->
     <string-array name="recents_clear_all_location_entries">
-        <item>@string/recents_clear_all_location_bottom_right</item>
+        <item>@string/recents_clear_all_location_top_left</item>
+		<item>@string/recents_clear_all_location_top_right</item>
         <item>@string/recents_clear_all_location_bottom_left</item>
+		<item>@string/recents_clear_all_location_bottom_right</item>
     </string-array>
 
     <string-array name="recents_clear_all_location_values" translatable="false">
